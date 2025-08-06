@@ -33,3 +33,66 @@ function calculatePositions() {
 
     document.getElementById('results').textContent = output;
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+  const now = new Date();
+  const dateStr = now.toISOString().split("T")[0];
+  const timeStr = now.toTimeString().slice(0, 5);
+  const tzOffset = -now.getTimezoneOffset() / 60;
+
+  document.getElementById("date").value = dateStr;
+  document.getElementById("time").value = timeStr;
+  document.getElementById("tz_offset").value = tzOffset;
+
+  // Set default city: Toronto
+  const defaultCityValue = "Toronto,43.6532,-79.3832";
+  document.getElementById("city").value = defaultCityValue;
+  const [_, lat, lon] = defaultCityValue.split(",");
+  document.getElementById("latitude").value = lat;
+  document.getElementById("longitude").value = lon;
+
+  // Show default result on load
+  calculatePositions();
+});
+
+function overrideCoordinates() {
+  const cityDropdown = document.getElementById("city");
+  const selected = cityDropdown.value;
+
+  if (selected) {
+    const parts = selected.split(",");
+    const lat = parts[1];
+    const lon = parts[2];
+    document.getElementById("latitude").value = lat;
+    document.getElementById("longitude").value = lon;
+  }
+}
+
+async function calculatePositions() {
+  const date = document.getElementById("date").value;
+  const time = document.getElementById("time").value;
+  const tz = document.getElementById("tz_offset").value;
+  const lat = document.getElementById("latitude").value;
+  const lon = document.getElementById("longitude").value;
+
+  const url = `http://localhost:8000/api/planet-positions?date=${date}&time=${time}&tz_offset=${tz}&lat=${lat}&lon=${lon}`;
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    let output = `Date: ${data.date} ${time}\n\nPlanet Positions:\n`;
+    for (const [planet, info] of Object.entries(data.positions)) {
+      let line = `${planet}: ${info.degree}° ${info.sign}`;
+      if (planet === "Moon" && info.nakshatra) {
+        line += ` (Nakshatra: ${info.nakshatra} - Pada ${info.pada})`;
+      }
+      output += line + "\n";
+    }
+
+    document.getElementById("results").textContent = output;
+  } catch (err) {
+    document.getElementById("results").textContent = "Failed to fetch positions.";
+    console.error(err);
+  }
+}

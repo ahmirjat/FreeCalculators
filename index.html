@@ -20,10 +20,30 @@
     <h2>Planet Positions Calculator</h2>
     <input type="date" id="date">
     <input type="time" id="time">
-    <input type="number" id="latitude" placeholder="Latitude" step="any">
-    <input type="number" id="longitude" placeholder="Longitude" step="any">
+    <input type="hidden" id="tz_offset">
+    <label for="city">Or select a different city:</label>
+    <select id="city" onchange="overrideCoordinates()">
+  <option value="">-- Use detected location --</option>
+  <option value="Karachi,24.8607,67.0011">Karachi</option>
+  <option value="Lahore,31.5497,74.3436">Lahore</option>
+  <option value="Islamabad,33.6844,73.0479">Islamabad</option>
+  <option value="Toronto,43.6532,-79.3832">Toronto</option>
+  <option value="Ottawa,45.4215,-75.6972">Ottawa</option>
+  <option value="New York,40.7128,-74.0060">New York</option>
+  <option value="Los Angeles,34.0522,-118.2437">Los Angeles</option>
+  <option value="London,51.5074,-0.1278">London</option>
+  <option value="Paris,48.8566,2.3522">Paris</option>
+  <option value="Tokyo,35.6895,139.6917">Tokyo</option>
+  <option value="Dubai,25.276987,55.296249">Dubai</option>
+    </select>
+
+    <input type="hidden" id="latitude">
+    <input type="hidden" id="longitude">
+
     <button onclick="calculatePositions()">Calculate</button>
     <pre id="results">No data yet.</pre>
+    <small>Initial result is for Toronto (City Hall). Select another city to update.</small>
+
   </main>
 
   <!-- Footer: Placeholder for attribution or links -->
