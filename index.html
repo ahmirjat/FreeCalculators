@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>FreeCalculators - Planet Positions</title>
-    <script src="app.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Ensure responsive scaling on mobile -->
+  <title>FreeCalculators – Planet Positions</title>
+  <link rel="stylesheet" href="styles.css">  <!-- Link to external CSS for styles -->
+  <script src="app.js" defer></script>
 </head>
 <body>
-    <h1>Planet Positions Calculator</h1>
+
+  <!-- Header: Site title and optional subtitle/logo -->
+  <header>
+    <h1 class="site-title">FreeCalculators</h1>
+    <p class="tagline">Your free online calculation toolkit</p>
+  </header>
+
+  <!-- Main content: Planet Positions Calculator UI -->
+  <main>
+    <h2>Planet Positions Calculator</h2>
     <input type="date" id="date">
     <input type="time" id="time">
     <input type="number" id="latitude" placeholder="Latitude" step="any">
     <input type="number" id="longitude" placeholder="Longitude" step="any">
     <button onclick="calculatePositions()">Calculate</button>
     <pre id="results">No data yet.</pre>
+  </main>
+
+  <!-- Footer: Placeholder for attribution or links -->
+  <footer>
+    <p>© 2025 FreeCalculators. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
