@@ -1,1 +1,17 @@
-404: Not Found
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FreeCalculators - Planet Positions</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Planet Positions Calculator</h1>
+    <input type="date" id="date">
+    <input type="time" id="time">
+    <input type="number" id="latitude" placeholder="Latitude" step="any">
+    <input type="number" id="longitude" placeholder="Longitude" step="any">
+    <button onclick="calculatePositions()">Calculate</button>
+    <pre id="results">No data yet.</pre>
+</body>
+</html>
