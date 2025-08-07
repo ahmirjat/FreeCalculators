@@ -8,25 +8,25 @@
   "positions": {
     "2025-08-07": {
       "Sun": {
-        "degree": 14.87,
+        "degree": 14.9,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 17.74,
+        "degree": 18.05,
         "sign": "Capricorn",
         "nakshatra": "Shravana",
         "pada": 1
       },
       "Mercury": {
-        "degree": 5.19,
+        "degree": 5.18,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 8.07,
+        "degree": 8.1,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 0.09,
+        "degree": 0.1,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -40,29 +40,29 @@
     },
     "2025-08-08": {
       "Sun": {
-        "degree": 15.83,
+        "degree": 15.85,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 0.76,
+        "degree": 1.07,
         "sign": "Aquarius",
         "nakshatra": "Dhanishta",
         "pada": 1
       },
       "Mercury": {
-        "degree": 4.81,
+        "degree": 4.8,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 9.24,
+        "degree": 9.27,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 0.71,
+        "degree": 0.72,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 13.21,
+        "degree": 13.22,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -72,29 +72,29 @@
     },
     "2025-08-09": {
       "Sun": {
-        "degree": 16.79,
+        "degree": 16.81,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 14.06,
+        "degree": 14.38,
         "sign": "Aquarius",
         "nakshatra": "Shatabhisha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 4.52,
+        "degree": 4.51,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 10.41,
+        "degree": 10.43,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 1.33,
+        "degree": 1.35,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 13.42,
+        "degree": 13.43,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -104,11 +104,11 @@
     },
     "2025-08-10": {
       "Sun": {
-        "degree": 17.75,
+        "degree": 17.77,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 27.63,
+        "degree": 27.95,
         "sign": "Aquarius",
         "nakshatra": "Purva Bhadrapada",
         "pada": 1
@@ -118,11 +118,11 @@
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 11.58,
+        "degree": 11.61,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 1.96,
+        "degree": 1.97,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -136,11 +136,11 @@
     },
     "2025-08-11": {
       "Sun": {
-        "degree": 18.71,
+        "degree": 18.73,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 11.42,
+        "degree": 11.75,
         "sign": "Pisces",
         "nakshatra": "Uttara Bhadrapada",
         "pada": 1
@@ -150,15 +150,15 @@
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 12.75,
+        "degree": 12.78,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 2.58,
+        "degree": 2.6,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 13.83,
+        "degree": 13.84,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -168,11 +168,11 @@
     },
     "2025-08-12": {
       "Sun": {
-        "degree": 19.67,
+        "degree": 19.69,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 25.39,
+        "degree": 25.72,
         "sign": "Pisces",
         "nakshatra": "Revati",
         "pada": 1
@@ -182,11 +182,11 @@
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 13.92,
+        "degree": 13.95,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 3.21,
+        "degree": 3.23,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -200,11 +200,11 @@
     },
     "2025-08-13": {
       "Sun": {
-        "degree": 20.63,
+        "degree": 20.65,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 9.49,
+        "degree": 9.82,
         "sign": "Aries",
         "nakshatra": "Ashwini",
         "pada": 1
@@ -214,15 +214,15 @@
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 15.1,
+        "degree": 15.13,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 3.84,
+        "degree": 3.85,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 14.24,
+        "degree": 14.25,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -232,11 +232,11 @@
     },
     "2025-08-14": {
       "Sun": {
-        "degree": 21.59,
+        "degree": 21.61,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 23.67,
+        "degree": 24.01,
         "sign": "Aries",
         "nakshatra": "Bharani",
         "pada": 1
@@ -246,15 +246,15 @@
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 16.28,
+        "degree": 16.3,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 4.47,
+        "degree": 4.48,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 14.44,
+        "degree": 14.45,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -264,25 +264,25 @@
     },
     "2025-08-15": {
       "Sun": {
-        "degree": 22.55,
+        "degree": 22.57,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 7.89,
+        "degree": 8.23,
         "sign": "Taurus",
         "nakshatra": "Krittika",
         "pada": 1
       },
       "Mercury": {
-        "degree": 5.09,
+        "degree": 5.11,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 17.46,
+        "degree": 17.48,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 5.1,
+        "degree": 5.11,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -296,25 +296,25 @@
     },
     "2025-08-16": {
       "Sun": {
-        "degree": 23.51,
+        "degree": 23.53,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 22.12,
+        "degree": 22.45,
         "sign": "Taurus",
         "nakshatra": "Rohini",
         "pada": 1
       },
       "Mercury": {
-        "degree": 5.6,
+        "degree": 5.62,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 18.63,
+        "degree": 18.66,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 5.73,
+        "degree": 5.75,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -328,25 +328,25 @@
     },
     "2025-08-17": {
       "Sun": {
-        "degree": 24.47,
+        "degree": 24.49,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 6.3,
+        "degree": 6.64,
         "sign": "Gemini",
         "nakshatra": "Mrigashira",
-        "pada": 1
+        "pada": 2
       },
       "Mercury": {
-        "degree": 6.23,
+        "degree": 6.25,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 19.82,
+        "degree": 19.84,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 6.36,
+        "degree": 6.38,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -360,25 +360,25 @@
     },
     "2025-08-18": {
       "Sun": {
-        "degree": 25.43,
+        "degree": 25.45,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 20.42,
+        "degree": 20.75,
         "sign": "Gemini",
         "nakshatra": "Punarvasu",
         "pada": 1
       },
       "Mercury": {
-        "degree": 6.98,
+        "degree": 7.0,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 21.0,
+        "degree": 21.03,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 7.0,
+        "degree": 7.01,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -392,29 +392,29 @@
     },
     "2025-08-19": {
       "Sun": {
-        "degree": 26.39,
+        "degree": 26.42,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 4.42,
+        "degree": 4.75,
         "sign": "Cancer",
         "nakshatra": "Pushya",
         "pada": 1
       },
       "Mercury": {
-        "degree": 7.84,
+        "degree": 7.86,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 22.18,
+        "degree": 22.21,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 7.63,
+        "degree": 7.65,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 15.44,
+        "degree": 15.45,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -424,25 +424,25 @@
     },
     "2025-08-20": {
       "Sun": {
-        "degree": 27.36,
+        "degree": 27.38,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 18.27,
+        "degree": 18.59,
         "sign": "Cancer",
         "nakshatra": "Ashlesha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 8.81,
+        "degree": 8.83,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 23.37,
+        "degree": 23.4,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 8.27,
+        "degree": 8.28,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -456,29 +456,29 @@
     },
     "2025-08-21": {
       "Sun": {
-        "degree": 28.32,
+        "degree": 28.34,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 1.92,
+        "degree": 2.24,
         "sign": "Leo",
         "nakshatra": "Magha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 9.89,
+        "degree": 9.92,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 24.56,
+        "degree": 24.58,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 8.91,
+        "degree": 8.92,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 15.83,
+        "degree": 15.84,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -488,25 +488,25 @@
     },
     "2025-08-22": {
       "Sun": {
-        "degree": 29.28,
+        "degree": 29.3,
         "sign": "Leo"
       },
       "Moon": {
-        "degree": 15.35,
+        "degree": 15.67,
         "sign": "Leo",
         "nakshatra": "Purva Phalguni",
         "pada": 1
       },
       "Mercury": {
-        "degree": 11.08,
+        "degree": 11.11,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 25.74,
+        "degree": 25.77,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 9.54,
+        "degree": 9.56,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -520,25 +520,25 @@
     },
     "2025-08-23": {
       "Sun": {
-        "degree": 0.25,
+        "degree": 0.27,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 28.52,
+        "degree": 28.83,
         "sign": "Leo",
         "nakshatra": "Uttara Phalguni",
         "pada": 1
       },
       "Mercury": {
-        "degree": 12.36,
+        "degree": 12.39,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 26.93,
+        "degree": 26.96,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 10.18,
+        "degree": 10.2,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -552,29 +552,29 @@
     },
     "2025-08-24": {
       "Sun": {
-        "degree": 1.21,
+        "degree": 1.23,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 11.43,
+        "degree": 11.73,
         "sign": "Virgo",
         "nakshatra": "Hasta",
         "pada": 1
       },
       "Mercury": {
-        "degree": 13.74,
+        "degree": 13.77,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 28.12,
+        "degree": 28.15,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 10.82,
+        "degree": 10.84,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 16.41,
+        "degree": 16.42,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -584,29 +584,29 @@
     },
     "2025-08-25": {
       "Sun": {
-        "degree": 2.17,
+        "degree": 2.2,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 24.06,
+        "degree": 24.36,
         "sign": "Virgo",
         "nakshatra": "Chitra",
         "pada": 1
       },
       "Mercury": {
-        "degree": 15.2,
+        "degree": 15.24,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 29.32,
+        "degree": 29.34,
         "sign": "Cancer"
       },
       "Mars": {
-        "degree": 11.47,
+        "degree": 11.48,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 16.6,
+        "degree": 16.61,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -616,25 +616,25 @@
     },
     "2025-08-26": {
       "Sun": {
-        "degree": 3.14,
+        "degree": 3.16,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 6.44,
+        "degree": 6.73,
         "sign": "Libra",
-        "nakshatra": "Chitra",
-        "pada": 2
+        "nakshatra": "Swati",
+        "pada": 1
       },
       "Mercury": {
-        "degree": 16.74,
+        "degree": 16.78,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 0.51,
+        "degree": 0.54,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 12.11,
+        "degree": 12.12,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -648,25 +648,25 @@
     },
     "2025-08-27": {
       "Sun": {
-        "degree": 4.11,
+        "degree": 4.13,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 18.61,
+        "degree": 18.9,
         "sign": "Libra",
         "nakshatra": "Swati",
         "pada": 1
       },
       "Mercury": {
-        "degree": 18.36,
+        "degree": 18.4,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 1.7,
+        "degree": 1.73,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 12.75,
+        "degree": 12.77,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -680,29 +680,29 @@
     },
     "2025-08-28": {
       "Sun": {
-        "degree": 5.07,
+        "degree": 5.09,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 0.61,
+        "degree": 0.89,
         "sign": "Scorpio",
         "nakshatra": "Vishakha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 20.04,
+        "degree": 20.08,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 2.9,
+        "degree": 2.93,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 13.4,
+        "degree": 13.41,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 17.16,
+        "degree": 17.17,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -712,25 +712,25 @@
     },
     "2025-08-29": {
       "Sun": {
-        "degree": 6.04,
+        "degree": 6.06,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 12.51,
+        "degree": 12.79,
         "sign": "Scorpio",
         "nakshatra": "Anuradha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 21.78,
+        "degree": 21.82,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 4.1,
+        "degree": 4.12,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 14.04,
+        "degree": 14.06,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -744,25 +744,25 @@
     },
     "2025-08-30": {
       "Sun": {
-        "degree": 7.0,
+        "degree": 7.03,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 24.36,
+        "degree": 24.64,
         "sign": "Scorpio",
         "nakshatra": "Jyeshtha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 23.57,
+        "degree": 23.61,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 5.29,
+        "degree": 5.32,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 14.69,
+        "degree": 14.7,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -776,29 +776,29 @@
     },
     "2025-08-31": {
       "Sun": {
-        "degree": 7.97,
+        "degree": 7.99,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 6.26,
+        "degree": 6.54,
         "sign": "Sagittarius",
         "nakshatra": "Mula",
         "pada": 1
       },
       "Mercury": {
-        "degree": 25.4,
+        "degree": 25.44,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 6.49,
+        "degree": 6.52,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 15.34,
+        "degree": 15.35,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 17.71,
+        "degree": 17.72,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -808,89 +808,89 @@
     },
     "2025-09-01": {
       "Sun": {
-        "degree": 8.94,
+        "degree": 8.96,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 18.27,
+        "degree": 18.56,
         "sign": "Sagittarius",
         "nakshatra": "Purva Ashadha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 27.26,
+        "degree": 27.3,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 7.69,
+        "degree": 7.72,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 15.99,
+        "degree": 16.0,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 17.89,
+        "degree": 17.9,
         "sign": "Cancer"
       },
       "Saturn": {
-        "degree": 0.02,
+        "degree": 0.01,
         "sign": "Aries"
       }
     },
     "2025-09-02": {
       "Sun": {
-        "degree": 9.91,
+        "degree": 9.93,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 0.48,
+        "degree": 0.77,
         "sign": "Capricorn",
         "nakshatra": "Uttara Ashadha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 29.15,
+        "degree": 29.2,
         "sign": "Leo"
       },
       "Venus": {
-        "degree": 8.89,
+        "degree": 8.92,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 16.64,
+        "degree": 16.65,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 18.07,
+        "degree": 18.08,
         "sign": "Cancer"
       },
       "Saturn": {
-        "degree": 29.95,
+        "degree": 29.94,
         "sign": "Pisces"
       }
     },
     "2025-09-03": {
       "Sun": {
-        "degree": 10.87,
+        "degree": 10.9,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 12.95,
+        "degree": 13.25,
         "sign": "Capricorn",
         "nakshatra": "Shravana",
         "pada": 1
       },
       "Mercury": {
-        "degree": 1.06,
+        "degree": 1.11,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 10.1,
+        "degree": 10.13,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 17.29,
+        "degree": 17.3,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -898,35 +898,35 @@
         "sign": "Cancer"
       },
       "Saturn": {
-        "degree": 29.88,
+        "degree": 29.87,
         "sign": "Pisces"
       }
     },
     "2025-09-04": {
       "Sun": {
-        "degree": 11.84,
+        "degree": 11.87,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 25.74,
+        "degree": 26.05,
         "sign": "Capricorn",
         "nakshatra": "Dhanishta",
         "pada": 1
       },
       "Mercury": {
-        "degree": 2.99,
+        "degree": 3.03,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 11.3,
+        "degree": 11.33,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 17.94,
+        "degree": 17.95,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 18.42,
+        "degree": 18.43,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -936,25 +936,25 @@
     },
     "2025-09-05": {
       "Sun": {
-        "degree": 12.81,
+        "degree": 12.83,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 8.89,
+        "degree": 9.2,
         "sign": "Aquarius",
         "nakshatra": "Shatabhisha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 4.92,
+        "degree": 4.97,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 12.51,
+        "degree": 12.53,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 18.59,
+        "degree": 18.61,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -968,25 +968,25 @@
     },
     "2025-09-06": {
       "Sun": {
-        "degree": 13.78,
+        "degree": 13.8,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 22.4,
+        "degree": 22.72,
         "sign": "Aquarius",
         "nakshatra": "Purva Bhadrapada",
         "pada": 1
       },
       "Mercury": {
-        "degree": 6.86,
+        "degree": 6.91,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 13.71,
+        "degree": 13.74,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 19.25,
+        "degree": 19.26,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -1000,25 +1000,25 @@
     },
     "2025-09-07": {
       "Sun": {
-        "degree": 14.75,
+        "degree": 14.77,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 6.27,
+        "degree": 6.6,
         "sign": "Pisces",
         "nakshatra": "Uttara Bhadrapada",
         "pada": 1
       },
       "Mercury": {
-        "degree": 8.8,
+        "degree": 8.84,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 14.92,
+        "degree": 14.95,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 19.9,
+        "degree": 19.92,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -1026,31 +1026,31 @@
         "sign": "Cancer"
       },
       "Saturn": {
-        "degree": 29.59,
+        "degree": 29.58,
         "sign": "Pisces"
       }
     },
     "2025-09-08": {
       "Sun": {
-        "degree": 15.72,
+        "degree": 15.74,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 20.45,
+        "degree": 20.79,
         "sign": "Pisces",
         "nakshatra": "Revati",
         "pada": 1
       },
       "Mercury": {
-        "degree": 10.73,
+        "degree": 10.78,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 16.13,
+        "degree": 16.16,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 20.56,
+        "degree": 20.57,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -1064,25 +1064,25 @@
     },
     "2025-09-09": {
       "Sun": {
-        "degree": 16.69,
+        "degree": 16.71,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 4.86,
+        "degree": 5.21,
         "sign": "Aries",
         "nakshatra": "Ashwini",
         "pada": 1
       },
       "Mercury": {
-        "degree": 12.66,
+        "degree": 12.71,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 17.34,
+        "degree": 17.37,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 21.21,
+        "degree": 21.23,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -1096,29 +1096,29 @@
     },
     "2025-09-10": {
       "Sun": {
-        "degree": 17.66,
+        "degree": 17.69,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 19.43,
+        "degree": 19.77,
         "sign": "Aries",
         "nakshatra": "Bharani",
         "pada": 1
       },
       "Mercury": {
-        "degree": 14.58,
+        "degree": 14.63,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 18.55,
+        "degree": 18.58,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 21.87,
+        "degree": 21.89,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 19.44,
+        "degree": 19.45,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -1128,25 +1128,25 @@
     },
     "2025-09-11": {
       "Sun": {
-        "degree": 18.63,
+        "degree": 18.66,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 4.03,
+        "degree": 4.38,
         "sign": "Taurus",
         "nakshatra": "Krittika",
         "pada": 1
       },
       "Mercury": {
-        "degree": 16.49,
+        "degree": 16.54,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 19.76,
+        "degree": 19.79,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 22.53,
+        "degree": 22.55,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -1160,25 +1160,25 @@
     },
     "2025-09-12": {
       "Sun": {
-        "degree": 19.61,
+        "degree": 19.63,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 18.59,
+        "degree": 18.93,
         "sign": "Taurus",
         "nakshatra": "Rohini",
         "pada": 1
       },
       "Mercury": {
-        "degree": 18.39,
+        "degree": 18.43,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 20.97,
+        "degree": 21.0,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 23.19,
+        "degree": 23.21,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -1192,25 +1192,25 @@
     },
     "2025-09-13": {
       "Sun": {
-        "degree": 20.58,
+        "degree": 20.6,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 3.02,
+        "degree": 3.36,
         "sign": "Gemini",
         "nakshatra": "Mrigashira",
         "pada": 1
       },
       "Mercury": {
-        "degree": 20.27,
+        "degree": 20.32,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 22.19,
+        "degree": 22.21,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 23.85,
+        "degree": 23.87,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -1224,25 +1224,25 @@
     },
     "2025-09-14": {
       "Sun": {
-        "degree": 21.55,
+        "degree": 21.58,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 17.25,
+        "degree": 17.59,
         "sign": "Gemini",
         "nakshatra": "Ardra",
         "pada": 1
       },
       "Mercury": {
-        "degree": 22.14,
+        "degree": 22.18,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 23.4,
+        "degree": 23.43,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 24.52,
+        "degree": 24.53,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -1256,25 +1256,25 @@
     },
     "2025-09-15": {
       "Sun": {
-        "degree": 22.53,
+        "degree": 22.55,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 1.26,
+        "degree": 1.59,
         "sign": "Cancer",
         "nakshatra": "Punarvasu",
         "pada": 1
       },
       "Mercury": {
-        "degree": 23.99,
+        "degree": 24.04,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 24.62,
+        "degree": 24.65,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 25.18,
+        "degree": 25.19,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -1288,25 +1288,25 @@
     },
     "2025-09-16": {
       "Sun": {
-        "degree": 23.5,
+        "degree": 23.52,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 15.02,
+        "degree": 15.34,
         "sign": "Cancer",
         "nakshatra": "Pushya",
         "pada": 1
       },
       "Mercury": {
-        "degree": 25.83,
+        "degree": 25.87,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 25.83,
+        "degree": 25.86,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 25.84,
+        "degree": 25.86,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -1320,29 +1320,29 @@
     },
     "2025-09-17": {
       "Sun": {
-        "degree": 24.48,
+        "degree": 24.5,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 28.53,
+        "degree": 28.84,
         "sign": "Cancer",
         "nakshatra": "Ashlesha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 27.65,
+        "degree": 27.69,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 27.05,
+        "degree": 27.08,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 26.51,
+        "degree": 26.52,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 20.55,
+        "degree": 20.56,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -1352,29 +1352,29 @@
     },
     "2025-09-18": {
       "Sun": {
-        "degree": 25.45,
+        "degree": 25.48,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 11.78,
+        "degree": 12.09,
         "sign": "Leo",
         "nakshatra": "Magha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 29.45,
+        "degree": 29.49,
         "sign": "Virgo"
       },
       "Venus": {
-        "degree": 28.27,
+        "degree": 28.3,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 27.18,
+        "degree": 27.19,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 20.7,
+        "degree": 20.71,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -1384,29 +1384,29 @@
     },
     "2025-09-19": {
       "Sun": {
-        "degree": 26.43,
+        "degree": 26.45,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 24.8,
+        "degree": 25.11,
         "sign": "Leo",
         "nakshatra": "Purva Phalguni",
         "pada": 1
       },
       "Mercury": {
-        "degree": 1.23,
+        "degree": 1.27,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 29.49,
+        "degree": 29.52,
         "sign": "Leo"
       },
       "Mars": {
-        "degree": 27.84,
+        "degree": 27.86,
         "sign": "Libra"
       },
       "Jupiter": {
-        "degree": 20.85,
+        "degree": 20.86,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -1416,25 +1416,25 @@
     },
     "2025-09-20": {
       "Sun": {
-        "degree": 27.41,
+        "degree": 27.43,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 7.6,
+        "degree": 7.9,
         "sign": "Virgo",
         "nakshatra": "Uttara Phalguni",
         "pada": 1
       },
       "Mercury": {
-        "degree": 3.0,
+        "degree": 3.04,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 0.71,
+        "degree": 0.74,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 28.51,
+        "degree": 28.53,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -1448,25 +1448,25 @@
     },
     "2025-09-21": {
       "Sun": {
-        "degree": 28.38,
+        "degree": 28.41,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 20.18,
+        "degree": 20.47,
         "sign": "Virgo",
         "nakshatra": "Hasta",
         "pada": 1
       },
       "Mercury": {
-        "degree": 4.75,
+        "degree": 4.79,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 1.94,
+        "degree": 1.97,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 29.18,
+        "degree": 29.2,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -1480,25 +1480,25 @@
     },
     "2025-09-22": {
       "Sun": {
-        "degree": 29.36,
+        "degree": 29.39,
         "sign": "Virgo"
       },
       "Moon": {
-        "degree": 2.57,
+        "degree": 2.86,
         "sign": "Libra",
         "nakshatra": "Chitra",
         "pada": 1
       },
       "Mercury": {
-        "degree": 6.48,
+        "degree": 6.52,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 3.16,
+        "degree": 3.19,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 29.85,
+        "degree": 29.87,
         "sign": "Libra"
       },
       "Jupiter": {
@@ -1512,25 +1512,25 @@
     },
     "2025-09-23": {
       "Sun": {
-        "degree": 0.34,
+        "degree": 0.36,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 14.78,
+        "degree": 15.07,
         "sign": "Libra",
         "nakshatra": "Swati",
         "pada": 1
       },
       "Mercury": {
-        "degree": 8.2,
+        "degree": 8.24,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 4.38,
+        "degree": 4.41,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 0.53,
+        "degree": 0.54,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -1544,25 +1544,25 @@
     },
     "2025-09-24": {
       "Sun": {
-        "degree": 1.32,
+        "degree": 1.34,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 26.84,
+        "degree": 27.13,
         "sign": "Libra",
         "nakshatra": "Vishakha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 9.9,
+        "degree": 9.94,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 5.61,
+        "degree": 5.64,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 1.2,
+        "degree": 1.21,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -1570,35 +1570,35 @@
         "sign": "Cancer"
       },
       "Saturn": {
-        "degree": 28.29,
+        "degree": 28.28,
         "sign": "Pisces"
       }
     },
     "2025-09-25": {
       "Sun": {
-        "degree": 2.3,
+        "degree": 2.32,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 8.79,
+        "degree": 9.07,
         "sign": "Scorpio",
         "nakshatra": "Anuradha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 11.58,
+        "degree": 11.62,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 6.83,
+        "degree": 6.86,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 1.87,
+        "degree": 1.89,
         "sign": "Scorpio"
       },
       "Jupiter": {
-        "degree": 21.7,
+        "degree": 21.71,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -1608,25 +1608,25 @@
     },
     "2025-09-26": {
       "Sun": {
-        "degree": 3.28,
+        "degree": 3.3,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 20.66,
+        "degree": 20.94,
         "sign": "Scorpio",
         "nakshatra": "Jyeshtha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 13.25,
+        "degree": 13.29,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 8.06,
+        "degree": 8.09,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 2.55,
+        "degree": 2.56,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -1640,25 +1640,25 @@
     },
     "2025-09-27": {
       "Sun": {
-        "degree": 4.26,
+        "degree": 4.28,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 2.5,
+        "degree": 2.78,
         "sign": "Sagittarius",
         "nakshatra": "Mula",
         "pada": 1
       },
       "Mercury": {
-        "degree": 14.9,
+        "degree": 14.94,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 9.29,
+        "degree": 9.32,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 3.22,
+        "degree": 3.24,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -1672,25 +1672,25 @@
     },
     "2025-09-28": {
       "Sun": {
-        "degree": 5.24,
+        "degree": 5.27,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 14.38,
+        "degree": 14.66,
         "sign": "Sagittarius",
         "nakshatra": "Purva Ashadha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 16.54,
+        "degree": 16.58,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 10.52,
+        "degree": 10.55,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 3.9,
+        "degree": 3.92,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -1704,25 +1704,25 @@
     },
     "2025-09-29": {
       "Sun": {
-        "degree": 6.22,
+        "degree": 6.25,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 26.36,
+        "degree": 26.64,
         "sign": "Sagittarius",
         "nakshatra": "Purva Ashadha",
-        "pada": 1
+        "pada": 2
       },
       "Mercury": {
-        "degree": 18.16,
+        "degree": 18.2,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 11.75,
+        "degree": 11.78,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 4.58,
+        "degree": 4.6,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -1736,57 +1736,57 @@
     },
     "2025-09-30": {
       "Sun": {
-        "degree": 7.21,
+        "degree": 7.23,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 8.51,
+        "degree": 8.8,
         "sign": "Capricorn",
         "nakshatra": "Uttara Ashadha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 19.77,
+        "degree": 19.81,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 12.98,
+        "degree": 13.01,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 5.26,
+        "degree": 5.28,
         "sign": "Scorpio"
       },
       "Jupiter": {
-        "degree": 22.35,
+        "degree": 22.36,
         "sign": "Cancer"
       },
       "Saturn": {
-        "degree": 27.83,
+        "degree": 27.82,
         "sign": "Pisces"
       }
     },
     "2025-10-01": {
       "Sun": {
-        "degree": 8.19,
+        "degree": 8.21,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 20.92,
+        "degree": 21.22,
         "sign": "Capricorn",
         "nakshatra": "Shravana",
         "pada": 1
       },
       "Mercury": {
-        "degree": 21.36,
+        "degree": 21.4,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 14.21,
+        "degree": 14.24,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 5.94,
+        "degree": 5.96,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -1800,25 +1800,25 @@
     },
     "2025-10-02": {
       "Sun": {
-        "degree": 9.17,
+        "degree": 9.2,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 3.66,
+        "degree": 3.96,
         "sign": "Aquarius",
         "nakshatra": "Dhanishta",
         "pada": 1
       },
       "Mercury": {
-        "degree": 22.94,
+        "degree": 22.98,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 15.44,
+        "degree": 15.47,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 6.62,
+        "degree": 6.64,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -1832,25 +1832,25 @@
     },
     "2025-10-03": {
       "Sun": {
-        "degree": 10.16,
+        "degree": 10.18,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 16.78,
+        "degree": 17.09,
         "sign": "Aquarius",
         "nakshatra": "Shatabhisha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 24.51,
+        "degree": 24.54,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 16.67,
+        "degree": 16.7,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 7.3,
+        "degree": 7.32,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -1864,25 +1864,25 @@
     },
     "2025-10-04": {
       "Sun": {
-        "degree": 11.14,
+        "degree": 11.16,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 0.32,
+        "degree": 0.65,
         "sign": "Pisces",
         "nakshatra": "Purva Bhadrapada",
         "pada": 1
       },
       "Mercury": {
-        "degree": 26.06,
+        "degree": 26.09,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 17.9,
+        "degree": 17.93,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 7.99,
+        "degree": 8.0,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -1896,29 +1896,29 @@
     },
     "2025-10-05": {
       "Sun": {
-        "degree": 12.12,
+        "degree": 12.15,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 14.31,
+        "degree": 14.65,
         "sign": "Pisces",
         "nakshatra": "Uttara Bhadrapada",
         "pada": 1
       },
       "Mercury": {
-        "degree": 27.59,
+        "degree": 27.63,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 19.14,
+        "degree": 19.17,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 8.67,
+        "degree": 8.69,
         "sign": "Scorpio"
       },
       "Jupiter": {
-        "degree": 22.94,
+        "degree": 22.95,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -1928,25 +1928,25 @@
     },
     "2025-10-06": {
       "Sun": {
-        "degree": 13.11,
+        "degree": 13.13,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 28.71,
+        "degree": 29.06,
         "sign": "Pisces",
         "nakshatra": "Revati",
         "pada": 1
       },
       "Mercury": {
-        "degree": 29.12,
+        "degree": 29.15,
         "sign": "Libra"
       },
       "Venus": {
-        "degree": 20.37,
+        "degree": 20.4,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 9.36,
+        "degree": 9.37,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -1960,29 +1960,29 @@
     },
     "2025-10-07": {
       "Sun": {
-        "degree": 14.1,
+        "degree": 14.12,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 13.45,
+        "degree": 13.8,
         "sign": "Aries",
         "nakshatra": "Bharani",
         "pada": 1
       },
       "Mercury": {
-        "degree": 0.63,
+        "degree": 0.66,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 21.61,
+        "degree": 21.64,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 10.04,
+        "degree": 10.06,
         "sign": "Scorpio"
       },
       "Jupiter": {
-        "degree": 23.16,
+        "degree": 23.17,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -1992,25 +1992,25 @@
     },
     "2025-10-08": {
       "Sun": {
-        "degree": 15.08,
+        "degree": 15.11,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 28.42,
+        "degree": 28.77,
         "sign": "Aries",
         "nakshatra": "Krittika",
         "pada": 1
       },
       "Mercury": {
-        "degree": 2.12,
+        "degree": 2.16,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 22.84,
+        "degree": 22.87,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 10.73,
+        "degree": 10.75,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2024,29 +2024,29 @@
     },
     "2025-10-09": {
       "Sun": {
-        "degree": 16.07,
+        "degree": 16.09,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 13.47,
+        "degree": 13.82,
         "sign": "Taurus",
         "nakshatra": "Rohini",
         "pada": 1
       },
       "Mercury": {
-        "degree": 3.61,
+        "degree": 3.64,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 24.08,
+        "degree": 24.11,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 11.42,
+        "degree": 11.44,
         "sign": "Scorpio"
       },
       "Jupiter": {
-        "degree": 23.37,
+        "degree": 23.38,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -2056,29 +2056,29 @@
     },
     "2025-10-10": {
       "Sun": {
-        "degree": 17.06,
+        "degree": 17.08,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 28.44,
+        "degree": 28.79,
         "sign": "Taurus",
         "nakshatra": "Mrigashira",
         "pada": 1
       },
       "Mercury": {
-        "degree": 5.08,
+        "degree": 5.11,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 25.32,
+        "degree": 25.35,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 12.11,
+        "degree": 12.13,
         "sign": "Scorpio"
       },
       "Jupiter": {
-        "degree": 23.47,
+        "degree": 23.48,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -2088,25 +2088,25 @@
     },
     "2025-10-11": {
       "Sun": {
-        "degree": 18.04,
+        "degree": 18.07,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 13.21,
+        "degree": 13.55,
         "sign": "Gemini",
         "nakshatra": "Ardra",
         "pada": 1
       },
       "Mercury": {
-        "degree": 6.53,
+        "degree": 6.57,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 26.56,
+        "degree": 26.59,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 12.8,
+        "degree": 12.82,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2120,25 +2120,25 @@
     },
     "2025-10-12": {
       "Sun": {
-        "degree": 19.03,
+        "degree": 19.06,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 27.66,
+        "degree": 28.0,
         "sign": "Gemini",
         "nakshatra": "Punarvasu",
         "pada": 1
       },
       "Mercury": {
-        "degree": 7.97,
+        "degree": 8.01,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 27.8,
+        "degree": 27.83,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 13.49,
+        "degree": 13.51,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2152,25 +2152,25 @@
     },
     "2025-10-13": {
       "Sun": {
-        "degree": 20.02,
+        "degree": 20.05,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 11.75,
+        "degree": 12.08,
         "sign": "Cancer",
         "nakshatra": "Pushya",
         "pada": 1
       },
       "Mercury": {
-        "degree": 9.4,
+        "degree": 9.44,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 29.04,
+        "degree": 29.07,
         "sign": "Virgo"
       },
       "Mars": {
-        "degree": 14.19,
+        "degree": 14.2,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2184,25 +2184,25 @@
     },
     "2025-10-14": {
       "Sun": {
-        "degree": 21.01,
+        "degree": 21.04,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 25.46,
+        "degree": 25.78,
         "sign": "Cancer",
         "nakshatra": "Ashlesha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 10.82,
+        "degree": 10.85,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 0.28,
+        "degree": 0.31,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 14.88,
+        "degree": 14.9,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2210,31 +2210,31 @@
         "sign": "Cancer"
       },
       "Saturn": {
-        "degree": 26.82,
+        "degree": 26.81,
         "sign": "Pisces"
       }
     },
     "2025-10-15": {
       "Sun": {
-        "degree": 22.0,
+        "degree": 22.03,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 8.79,
+        "degree": 9.11,
         "sign": "Leo",
         "nakshatra": "Magha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 12.21,
+        "degree": 12.25,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 1.52,
+        "degree": 1.55,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 15.57,
+        "degree": 15.59,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2248,25 +2248,25 @@
     },
     "2025-10-16": {
       "Sun": {
-        "degree": 23.0,
+        "degree": 23.02,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 21.8,
+        "degree": 22.1,
         "sign": "Leo",
         "nakshatra": "Purva Phalguni",
         "pada": 1
       },
       "Mercury": {
-        "degree": 13.6,
+        "degree": 13.63,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 2.76,
+        "degree": 2.79,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 16.27,
+        "degree": 16.29,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2280,25 +2280,25 @@
     },
     "2025-10-17": {
       "Sun": {
-        "degree": 23.99,
+        "degree": 24.01,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 4.52,
+        "degree": 4.82,
         "sign": "Virgo",
         "nakshatra": "Uttara Phalguni",
         "pada": 1
       },
       "Mercury": {
-        "degree": 14.96,
+        "degree": 15.0,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 4.0,
+        "degree": 4.03,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 16.97,
+        "degree": 16.98,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2312,25 +2312,25 @@
     },
     "2025-10-18": {
       "Sun": {
-        "degree": 24.98,
+        "degree": 25.0,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 17.01,
+        "degree": 17.31,
         "sign": "Virgo",
         "nakshatra": "Hasta",
         "pada": 1
       },
       "Mercury": {
-        "degree": 16.31,
+        "degree": 16.35,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 5.25,
+        "degree": 5.28,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 17.67,
+        "degree": 17.68,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2338,31 +2338,31 @@
         "sign": "Cancer"
       },
       "Saturn": {
-        "degree": 26.56,
+        "degree": 26.55,
         "sign": "Pisces"
       }
     },
     "2025-10-19": {
       "Sun": {
-        "degree": 25.97,
+        "degree": 26.0,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 29.32,
+        "degree": 29.61,
         "sign": "Virgo",
         "nakshatra": "Chitra",
         "pada": 1
       },
       "Mercury": {
-        "degree": 17.65,
+        "degree": 17.68,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 6.49,
+        "degree": 6.52,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 18.37,
+        "degree": 18.38,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2376,25 +2376,25 @@
     },
     "2025-10-20": {
       "Sun": {
-        "degree": 26.97,
+        "degree": 26.99,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 11.47,
+        "degree": 11.76,
         "sign": "Libra",
         "nakshatra": "Swati",
         "pada": 1
       },
       "Mercury": {
-        "degree": 18.96,
+        "degree": 18.99,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 7.73,
+        "degree": 7.76,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 19.07,
+        "degree": 19.08,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2408,25 +2408,25 @@
     },
     "2025-10-21": {
       "Sun": {
-        "degree": 27.96,
+        "degree": 27.98,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 23.51,
+        "degree": 23.79,
         "sign": "Libra",
         "nakshatra": "Vishakha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 20.25,
+        "degree": 20.28,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 8.98,
+        "degree": 9.01,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 19.77,
+        "degree": 19.78,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2440,25 +2440,25 @@
     },
     "2025-10-22": {
       "Sun": {
-        "degree": 28.96,
+        "degree": 28.98,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 5.46,
+        "degree": 5.74,
         "sign": "Scorpio",
         "nakshatra": "Anuradha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 21.53,
+        "degree": 21.56,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 10.22,
+        "degree": 10.25,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 20.47,
+        "degree": 20.49,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2472,25 +2472,25 @@
     },
     "2025-10-23": {
       "Sun": {
-        "degree": 29.95,
+        "degree": 29.98,
         "sign": "Libra"
       },
       "Moon": {
-        "degree": 17.34,
+        "degree": 17.62,
         "sign": "Scorpio",
         "nakshatra": "Jyeshtha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 22.77,
+        "degree": 22.8,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 11.47,
+        "degree": 11.5,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 21.17,
+        "degree": 21.19,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2504,25 +2504,25 @@
     },
     "2025-10-24": {
       "Sun": {
-        "degree": 0.95,
+        "degree": 0.97,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 29.19,
+        "degree": 29.47,
         "sign": "Scorpio",
         "nakshatra": "Jyeshtha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 24.0,
+        "degree": 24.03,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 12.72,
+        "degree": 12.75,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 21.88,
+        "degree": 21.89,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2536,25 +2536,25 @@
     },
     "2025-10-25": {
       "Sun": {
-        "degree": 1.94,
+        "degree": 1.97,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 11.04,
+        "degree": 11.32,
         "sign": "Sagittarius",
         "nakshatra": "Mula",
         "pada": 1
       },
       "Mercury": {
-        "degree": 25.19,
+        "degree": 25.22,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 13.96,
+        "degree": 13.99,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 22.58,
+        "degree": 22.6,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2568,29 +2568,29 @@
     },
     "2025-10-26": {
       "Sun": {
-        "degree": 2.94,
+        "degree": 2.96,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 22.93,
+        "degree": 23.21,
         "sign": "Sagittarius",
         "nakshatra": "Purva Ashadha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 26.36,
+        "degree": 26.39,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 15.21,
+        "degree": 15.24,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 23.29,
+        "degree": 23.31,
         "sign": "Scorpio"
       },
       "Jupiter": {
-        "degree": 24.7,
+        "degree": 24.71,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -2600,25 +2600,25 @@
     },
     "2025-10-27": {
       "Sun": {
-        "degree": 3.94,
+        "degree": 3.96,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 4.9,
+        "degree": 5.19,
         "sign": "Capricorn",
         "nakshatra": "Uttara Ashadha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 27.49,
+        "degree": 27.52,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 16.46,
+        "degree": 16.49,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 24.0,
+        "degree": 24.01,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2626,31 +2626,31 @@
         "sign": "Cancer"
       },
       "Saturn": {
-        "degree": 26.04,
+        "degree": 26.03,
         "sign": "Pisces"
       }
     },
     "2025-10-28": {
       "Sun": {
-        "degree": 4.94,
+        "degree": 4.96,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 17.02,
+        "degree": 17.31,
         "sign": "Capricorn",
         "nakshatra": "Shravana",
         "pada": 1
       },
       "Mercury": {
-        "degree": 28.59,
+        "degree": 28.61,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 17.71,
+        "degree": 17.74,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 24.7,
+        "degree": 24.72,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2664,25 +2664,25 @@
     },
     "2025-10-29": {
       "Sun": {
-        "degree": 5.94,
+        "degree": 5.96,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 29.36,
+        "degree": 29.65,
         "sign": "Capricorn",
         "nakshatra": "Dhanishta",
         "pada": 1
       },
       "Mercury": {
-        "degree": 29.64,
+        "degree": 29.67,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 18.96,
+        "degree": 18.99,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 25.41,
+        "degree": 25.43,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2696,25 +2696,25 @@
     },
     "2025-10-30": {
       "Sun": {
-        "degree": 6.93,
+        "degree": 6.96,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 11.98,
+        "degree": 12.28,
         "sign": "Aquarius",
         "nakshatra": "Shatabhisha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 0.65,
+        "degree": 0.68,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 20.2,
+        "degree": 20.23,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 26.12,
+        "degree": 26.14,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2728,25 +2728,25 @@
     },
     "2025-10-31": {
       "Sun": {
-        "degree": 7.93,
+        "degree": 7.96,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 24.97,
+        "degree": 25.29,
         "sign": "Aquarius",
         "nakshatra": "Purva Bhadrapada",
         "pada": 1
       },
       "Mercury": {
-        "degree": 1.61,
+        "degree": 1.64,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 21.45,
+        "degree": 21.48,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 26.84,
+        "degree": 26.85,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2760,25 +2760,25 @@
     },
     "2025-11-01": {
       "Sun": {
-        "degree": 8.93,
+        "degree": 8.96,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 8.4,
+        "degree": 8.72,
         "sign": "Pisces",
         "nakshatra": "Uttara Bhadrapada",
         "pada": 1
       },
       "Mercury": {
-        "degree": 2.52,
+        "degree": 2.54,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 22.7,
+        "degree": 22.73,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 27.55,
+        "degree": 27.57,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2792,25 +2792,25 @@
     },
     "2025-11-02": {
       "Sun": {
-        "degree": 9.93,
+        "degree": 9.96,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 22.29,
+        "degree": 22.62,
         "sign": "Pisces",
         "nakshatra": "Revati",
         "pada": 1
       },
       "Mercury": {
-        "degree": 3.36,
+        "degree": 3.38,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 23.95,
+        "degree": 23.98,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 28.26,
+        "degree": 28.28,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2824,25 +2824,25 @@
     },
     "2025-11-03": {
       "Sun": {
-        "degree": 10.93,
+        "degree": 10.96,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 6.66,
+        "degree": 7.01,
         "sign": "Aries",
         "nakshatra": "Ashwini",
         "pada": 1
       },
       "Mercury": {
-        "degree": 4.14,
+        "degree": 4.15,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 25.2,
+        "degree": 25.23,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 28.98,
+        "degree": 28.99,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2856,25 +2856,25 @@
     },
     "2025-11-04": {
       "Sun": {
-        "degree": 11.94,
+        "degree": 11.96,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 21.47,
+        "degree": 21.82,
         "sign": "Aries",
         "nakshatra": "Bharani",
         "pada": 1
       },
       "Mercury": {
-        "degree": 4.83,
+        "degree": 4.85,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 26.46,
+        "degree": 26.48,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 29.69,
+        "degree": 29.71,
         "sign": "Scorpio"
       },
       "Jupiter": {
@@ -2888,25 +2888,25 @@
     },
     "2025-11-05": {
       "Sun": {
-        "degree": 12.94,
+        "degree": 12.96,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 6.6,
+        "degree": 6.96,
         "sign": "Taurus",
         "nakshatra": "Krittika",
         "pada": 1
       },
       "Mercury": {
-        "degree": 5.44,
+        "degree": 5.46,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 27.71,
+        "degree": 27.74,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 0.41,
+        "degree": 0.42,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -2920,25 +2920,25 @@
     },
     "2025-11-06": {
       "Sun": {
-        "degree": 13.94,
+        "degree": 13.96,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 21.92,
+        "degree": 22.28,
         "sign": "Taurus",
         "nakshatra": "Rohini",
         "pada": 1
       },
       "Mercury": {
-        "degree": 5.96,
+        "degree": 5.97,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 28.96,
+        "degree": 28.99,
         "sign": "Libra"
       },
       "Mars": {
-        "degree": 1.13,
+        "degree": 1.14,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -2952,25 +2952,25 @@
     },
     "2025-11-07": {
       "Sun": {
-        "degree": 14.94,
+        "degree": 14.97,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 7.22,
+        "degree": 7.58,
         "sign": "Gemini",
         "nakshatra": "Ardra",
         "pada": 1
       },
       "Mercury": {
-        "degree": 6.37,
+        "degree": 6.38,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 0.21,
+        "degree": 0.24,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 1.84,
+        "degree": 1.86,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -2984,25 +2984,25 @@
     },
     "2025-11-08": {
       "Sun": {
-        "degree": 15.95,
+        "degree": 15.97,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 22.32,
+        "degree": 22.67,
         "sign": "Gemini",
         "nakshatra": "Punarvasu",
         "pada": 1
       },
       "Mercury": {
-        "degree": 6.66,
+        "degree": 6.67,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 1.46,
+        "degree": 1.49,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 2.56,
+        "degree": 2.58,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3016,11 +3016,11 @@
     },
     "2025-11-09": {
       "Sun": {
-        "degree": 16.95,
+        "degree": 16.97,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 7.07,
+        "degree": 7.41,
         "sign": "Cancer",
         "nakshatra": "Pushya",
         "pada": 1
@@ -3030,11 +3030,11 @@
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 2.71,
+        "degree": 2.74,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 3.28,
+        "degree": 3.3,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3048,11 +3048,11 @@
     },
     "2025-11-10": {
       "Sun": {
-        "degree": 17.95,
+        "degree": 17.98,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 21.37,
+        "degree": 21.71,
         "sign": "Cancer",
         "nakshatra": "Ashlesha",
         "pada": 1
@@ -3062,11 +3062,11 @@
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 3.97,
+        "degree": 4.0,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 4.0,
+        "degree": 4.02,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3074,17 +3074,17 @@
         "sign": "Cancer"
       },
       "Saturn": {
-        "degree": 25.45,
+        "degree": 25.44,
         "sign": "Pisces"
       }
     },
     "2025-11-11": {
       "Sun": {
-        "degree": 18.96,
+        "degree": 18.98,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 5.2,
+        "degree": 5.52,
         "sign": "Leo",
         "nakshatra": "Magha",
         "pada": 1
@@ -3094,11 +3094,11 @@
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 5.22,
+        "degree": 5.25,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 4.73,
+        "degree": 4.74,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3112,25 +3112,25 @@
     },
     "2025-11-12": {
       "Sun": {
-        "degree": 19.96,
+        "degree": 19.99,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 18.56,
+        "degree": 18.87,
         "sign": "Leo",
         "nakshatra": "Purva Phalguni",
         "pada": 1
       },
       "Mercury": {
-        "degree": 6.45,
+        "degree": 6.44,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 6.47,
+        "degree": 6.5,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 5.45,
+        "degree": 5.47,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3144,25 +3144,25 @@
     },
     "2025-11-13": {
       "Sun": {
-        "degree": 20.97,
+        "degree": 20.99,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 1.5,
+        "degree": 1.8,
         "sign": "Virgo",
         "nakshatra": "Uttara Phalguni",
         "pada": 1
       },
       "Mercury": {
-        "degree": 6.0,
+        "degree": 5.98,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 7.73,
+        "degree": 7.76,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 6.17,
+        "degree": 6.19,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3176,25 +3176,25 @@
     },
     "2025-11-14": {
       "Sun": {
-        "degree": 21.98,
+        "degree": 22.0,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 14.1,
+        "degree": 14.39,
         "sign": "Virgo",
         "nakshatra": "Hasta",
         "pada": 1
       },
       "Mercury": {
-        "degree": 5.38,
+        "degree": 5.36,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 8.98,
+        "degree": 9.01,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 6.9,
+        "degree": 6.92,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3208,25 +3208,25 @@
     },
     "2025-11-15": {
       "Sun": {
-        "degree": 22.98,
+        "degree": 23.01,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 26.42,
+        "degree": 26.71,
         "sign": "Virgo",
         "nakshatra": "Chitra",
         "pada": 1
       },
       "Mercury": {
-        "degree": 4.59,
+        "degree": 4.57,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 10.24,
+        "degree": 10.27,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 7.63,
+        "degree": 7.64,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3240,25 +3240,25 @@
     },
     "2025-11-16": {
       "Sun": {
-        "degree": 23.99,
+        "degree": 24.01,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 8.55,
+        "degree": 8.83,
         "sign": "Libra",
         "nakshatra": "Swati",
         "pada": 1
       },
       "Mercury": {
-        "degree": 3.64,
+        "degree": 3.62,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 11.49,
+        "degree": 11.52,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 8.35,
+        "degree": 8.37,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3272,25 +3272,25 @@
     },
     "2025-11-17": {
       "Sun": {
-        "degree": 25.0,
+        "degree": 25.02,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 20.54,
+        "degree": 20.82,
         "sign": "Libra",
         "nakshatra": "Vishakha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 2.55,
+        "degree": 2.52,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 12.75,
+        "degree": 12.78,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 9.08,
+        "degree": 9.1,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3304,25 +3304,25 @@
     },
     "2025-11-18": {
       "Sun": {
-        "degree": 26.01,
+        "degree": 26.03,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 2.45,
+        "degree": 2.73,
         "sign": "Scorpio",
         "nakshatra": "Vishakha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 1.34,
+        "degree": 1.31,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 14.0,
+        "degree": 14.03,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 9.81,
+        "degree": 9.83,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3336,25 +3336,25 @@
     },
     "2025-11-19": {
       "Sun": {
-        "degree": 27.02,
+        "degree": 27.04,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 14.31,
+        "degree": 14.59,
         "sign": "Scorpio",
         "nakshatra": "Anuradha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 0.04,
+        "degree": 0.0,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 15.26,
+        "degree": 15.29,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 10.54,
+        "degree": 10.56,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3368,25 +3368,25 @@
     },
     "2025-11-20": {
       "Sun": {
-        "degree": 28.03,
+        "degree": 28.05,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 26.17,
+        "degree": 26.45,
         "sign": "Scorpio",
         "nakshatra": "Jyeshtha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 28.69,
+        "degree": 28.66,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 16.51,
+        "degree": 16.54,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 11.27,
+        "degree": 11.29,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3400,25 +3400,25 @@
     },
     "2025-11-21": {
       "Sun": {
-        "degree": 29.04,
+        "degree": 29.06,
         "sign": "Scorpio"
       },
       "Moon": {
-        "degree": 8.04,
+        "degree": 8.32,
         "sign": "Sagittarius",
         "nakshatra": "Mula",
         "pada": 1
       },
       "Mercury": {
-        "degree": 27.33,
+        "degree": 27.3,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 17.77,
+        "degree": 17.8,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 12.0,
+        "degree": 12.02,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3432,25 +3432,25 @@
     },
     "2025-11-22": {
       "Sun": {
-        "degree": 0.05,
+        "degree": 0.07,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 19.94,
+        "degree": 20.22,
         "sign": "Sagittarius",
         "nakshatra": "Purva Ashadha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 26.02,
+        "degree": 25.99,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 19.03,
+        "degree": 19.06,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 12.74,
+        "degree": 12.76,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3464,25 +3464,25 @@
     },
     "2025-11-23": {
       "Sun": {
-        "degree": 1.06,
+        "degree": 1.08,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 1.9,
+        "degree": 2.18,
         "sign": "Capricorn",
         "nakshatra": "Uttara Ashadha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 24.79,
+        "degree": 24.76,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 20.28,
+        "degree": 20.31,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 13.47,
+        "degree": 13.49,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3496,29 +3496,29 @@
     },
     "2025-11-24": {
       "Sun": {
-        "degree": 2.07,
+        "degree": 2.09,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 13.95,
+        "degree": 14.24,
         "sign": "Capricorn",
         "nakshatra": "Shravana",
         "pada": 1
       },
       "Mercury": {
-        "degree": 23.68,
+        "degree": 23.66,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 21.54,
+        "degree": 21.57,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 14.21,
+        "degree": 14.22,
         "sign": "Sagittarius"
       },
       "Jupiter": {
-        "degree": 24.9,
+        "degree": 24.89,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -3528,25 +3528,25 @@
     },
     "2025-11-25": {
       "Sun": {
-        "degree": 3.08,
+        "degree": 3.1,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 26.12,
+        "degree": 26.41,
         "sign": "Capricorn",
         "nakshatra": "Dhanishta",
         "pada": 1
       },
       "Mercury": {
-        "degree": 22.72,
+        "degree": 22.7,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 22.8,
+        "degree": 22.83,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 14.94,
+        "degree": 14.96,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3560,29 +3560,29 @@
     },
     "2025-11-26": {
       "Sun": {
-        "degree": 4.09,
+        "degree": 4.11,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 8.47,
+        "degree": 8.77,
         "sign": "Aquarius",
         "nakshatra": "Shatabhisha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 21.94,
+        "degree": 21.93,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 24.05,
+        "degree": 24.08,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 15.68,
+        "degree": 15.7,
         "sign": "Sagittarius"
       },
       "Jupiter": {
-        "degree": 24.81,
+        "degree": 24.8,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -3592,25 +3592,25 @@
     },
     "2025-11-27": {
       "Sun": {
-        "degree": 5.1,
+        "degree": 5.13,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 21.06,
+        "degree": 21.36,
         "sign": "Aquarius",
         "nakshatra": "Purva Bhadrapada",
         "pada": 1
       },
       "Mercury": {
-        "degree": 21.35,
+        "degree": 21.34,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 25.31,
+        "degree": 25.34,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 16.42,
+        "degree": 16.44,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3624,25 +3624,25 @@
     },
     "2025-11-28": {
       "Sun": {
-        "degree": 6.11,
+        "degree": 6.14,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 3.95,
+        "degree": 4.26,
         "sign": "Pisces",
         "nakshatra": "Uttara Bhadrapada",
         "pada": 1
       },
       "Mercury": {
-        "degree": 20.95,
+        "degree": 20.94,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 26.57,
+        "degree": 26.6,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 17.16,
+        "degree": 17.17,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3656,11 +3656,11 @@
     },
     "2025-11-29": {
       "Sun": {
-        "degree": 7.13,
+        "degree": 7.15,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 17.21,
+        "degree": 17.53,
         "sign": "Pisces",
         "nakshatra": "Revati",
         "pada": 1
@@ -3670,11 +3670,11 @@
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 27.82,
+        "degree": 27.85,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 17.9,
+        "degree": 17.91,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3688,11 +3688,11 @@
     },
     "2025-11-30": {
       "Sun": {
-        "degree": 8.14,
+        "degree": 8.16,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 0.91,
+        "degree": 1.24,
         "sign": "Aries",
         "nakshatra": "Ashwini",
         "pada": 1
@@ -3702,11 +3702,11 @@
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 29.08,
+        "degree": 29.11,
         "sign": "Scorpio"
       },
       "Mars": {
-        "degree": 18.64,
+        "degree": 18.65,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3720,25 +3720,25 @@
     },
     "2025-12-01": {
       "Sun": {
-        "degree": 9.15,
+        "degree": 9.18,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 15.06,
+        "degree": 15.4,
         "sign": "Aries",
         "nakshatra": "Bharani",
         "pada": 1
       },
       "Mercury": {
-        "degree": 20.87,
+        "degree": 20.88,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 0.34,
+        "degree": 0.37,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 19.38,
+        "degree": 19.4,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3752,25 +3752,25 @@
     },
     "2025-12-02": {
       "Sun": {
-        "degree": 10.17,
+        "degree": 10.19,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 29.67,
-        "sign": "Aries",
+        "degree": 0.02,
+        "sign": "Taurus",
         "nakshatra": "Krittika",
         "pada": 1
       },
       "Mercury": {
-        "degree": 21.18,
+        "degree": 21.19,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 1.6,
+        "degree": 1.63,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 20.12,
+        "degree": 20.14,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3784,25 +3784,25 @@
     },
     "2025-12-03": {
       "Sun": {
-        "degree": 11.18,
+        "degree": 11.2,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 14.67,
+        "degree": 15.03,
         "sign": "Taurus",
         "nakshatra": "Rohini",
         "pada": 1
       },
       "Mercury": {
-        "degree": 21.64,
+        "degree": 21.66,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 2.85,
+        "degree": 2.88,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 20.86,
+        "degree": 20.88,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3816,25 +3816,25 @@
     },
     "2025-12-04": {
       "Sun": {
-        "degree": 12.19,
+        "degree": 12.22,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 29.92,
-        "sign": "Taurus",
+        "degree": 0.29,
+        "sign": "Gemini",
         "nakshatra": "Mrigashira",
         "pada": 1
       },
       "Mercury": {
-        "degree": 22.23,
+        "degree": 22.25,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 4.11,
+        "degree": 4.14,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 21.61,
+        "degree": 21.62,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3848,25 +3848,25 @@
     },
     "2025-12-05": {
       "Sun": {
-        "degree": 13.21,
+        "degree": 13.23,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 15.26,
+        "degree": 15.63,
         "sign": "Gemini",
         "nakshatra": "Ardra",
         "pada": 1
       },
       "Mercury": {
-        "degree": 22.94,
+        "degree": 22.96,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 5.37,
+        "degree": 5.4,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 22.35,
+        "degree": 22.37,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3880,25 +3880,25 @@
     },
     "2025-12-06": {
       "Sun": {
-        "degree": 14.22,
+        "degree": 14.25,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 0.49,
+        "degree": 0.85,
         "sign": "Cancer",
         "nakshatra": "Punarvasu",
         "pada": 1
       },
       "Mercury": {
-        "degree": 23.76,
+        "degree": 23.78,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 6.63,
+        "degree": 6.66,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 23.1,
+        "degree": 23.11,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3912,25 +3912,25 @@
     },
     "2025-12-07": {
       "Sun": {
-        "degree": 15.24,
+        "degree": 15.26,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 15.42,
+        "degree": 15.77,
         "sign": "Cancer",
         "nakshatra": "Pushya",
         "pada": 1
       },
       "Mercury": {
-        "degree": 24.66,
+        "degree": 24.68,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 7.88,
+        "degree": 7.91,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 23.84,
+        "degree": 23.86,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3944,25 +3944,25 @@
     },
     "2025-12-08": {
       "Sun": {
-        "degree": 16.25,
+        "degree": 16.28,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 29.93,
-        "sign": "Cancer",
-        "nakshatra": "Ashlesha",
-        "pada": 2
+        "degree": 0.27,
+        "sign": "Leo",
+        "nakshatra": "Magha",
+        "pada": 1
       },
       "Mercury": {
-        "degree": 25.65,
+        "degree": 25.67,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 9.14,
+        "degree": 9.17,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 24.59,
+        "degree": 24.61,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -3976,29 +3976,29 @@
     },
     "2025-12-09": {
       "Sun": {
-        "degree": 17.27,
+        "degree": 17.29,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 13.94,
+        "degree": 14.26,
         "sign": "Leo",
         "nakshatra": "Purva Phalguni",
         "pada": 1
       },
       "Mercury": {
-        "degree": 26.7,
+        "degree": 26.73,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 10.4,
+        "degree": 10.43,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 25.34,
+        "degree": 25.36,
         "sign": "Sagittarius"
       },
       "Jupiter": {
-        "degree": 23.93,
+        "degree": 23.92,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -4008,25 +4008,25 @@
     },
     "2025-12-10": {
       "Sun": {
-        "degree": 18.28,
+        "degree": 18.31,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 27.44,
+        "degree": 27.75,
         "sign": "Leo",
         "nakshatra": "Uttara Phalguni",
         "pada": 1
       },
       "Mercury": {
-        "degree": 27.82,
+        "degree": 27.85,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 11.66,
+        "degree": 11.69,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 26.09,
+        "degree": 26.11,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -4040,29 +4040,29 @@
     },
     "2025-12-11": {
       "Sun": {
-        "degree": 19.3,
+        "degree": 19.32,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 10.47,
+        "degree": 10.77,
         "sign": "Virgo",
         "nakshatra": "Hasta",
         "pada": 1
       },
       "Mercury": {
-        "degree": 28.99,
+        "degree": 29.02,
         "sign": "Scorpio"
       },
       "Venus": {
-        "degree": 12.92,
+        "degree": 12.95,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 26.84,
+        "degree": 26.86,
         "sign": "Sagittarius"
       },
       "Jupiter": {
-        "degree": 23.75,
+        "degree": 23.74,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -4072,25 +4072,25 @@
     },
     "2025-12-12": {
       "Sun": {
-        "degree": 20.32,
+        "degree": 20.34,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 23.1,
+        "degree": 23.39,
         "sign": "Virgo",
-        "nakshatra": "Hasta",
-        "pada": 2
+        "nakshatra": "Chitra",
+        "pada": 1
       },
       "Mercury": {
-        "degree": 0.21,
+        "degree": 0.24,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 14.17,
+        "degree": 14.2,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 27.59,
+        "degree": 27.61,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -4104,25 +4104,25 @@
     },
     "2025-12-13": {
       "Sun": {
-        "degree": 21.33,
+        "degree": 21.36,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 5.41,
+        "degree": 5.7,
         "sign": "Libra",
         "nakshatra": "Chitra",
         "pada": 1
       },
       "Mercury": {
-        "degree": 1.46,
+        "degree": 1.49,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 15.43,
+        "degree": 15.46,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 28.34,
+        "degree": 28.36,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -4136,25 +4136,25 @@
     },
     "2025-12-14": {
       "Sun": {
-        "degree": 22.35,
+        "degree": 22.37,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 17.49,
+        "degree": 17.77,
         "sign": "Libra",
         "nakshatra": "Swati",
         "pada": 1
       },
       "Mercury": {
-        "degree": 2.75,
+        "degree": 2.78,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 16.69,
+        "degree": 16.72,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 29.09,
+        "degree": 29.11,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -4168,25 +4168,25 @@
     },
     "2025-12-15": {
       "Sun": {
-        "degree": 23.37,
+        "degree": 23.39,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 29.42,
+        "degree": 29.7,
         "sign": "Libra",
         "nakshatra": "Vishakha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 4.07,
+        "degree": 4.11,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 17.95,
+        "degree": 17.98,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 29.85,
+        "degree": 29.86,
         "sign": "Sagittarius"
       },
       "Jupiter": {
@@ -4194,31 +4194,31 @@
         "sign": "Cancer"
       },
       "Saturn": {
-        "degree": 25.41,
+        "degree": 25.42,
         "sign": "Pisces"
       }
     },
     "2025-12-16": {
       "Sun": {
-        "degree": 24.38,
+        "degree": 24.41,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 11.27,
+        "degree": 11.55,
         "sign": "Scorpio",
         "nakshatra": "Anuradha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 5.42,
+        "degree": 5.45,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 19.21,
+        "degree": 19.24,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 0.6,
+        "degree": 0.62,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4232,25 +4232,25 @@
     },
     "2025-12-17": {
       "Sun": {
-        "degree": 25.4,
+        "degree": 25.43,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 23.11,
+        "degree": 23.39,
         "sign": "Scorpio",
         "nakshatra": "Jyeshtha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 6.79,
+        "degree": 6.82,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 20.47,
+        "degree": 20.5,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 1.36,
+        "degree": 1.37,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4264,25 +4264,25 @@
     },
     "2025-12-18": {
       "Sun": {
-        "degree": 26.42,
+        "degree": 26.44,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 4.97,
+        "degree": 5.25,
         "sign": "Sagittarius",
         "nakshatra": "Mula",
         "pada": 1
       },
       "Mercury": {
-        "degree": 8.18,
+        "degree": 8.21,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 21.73,
+        "degree": 21.76,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 2.11,
+        "degree": 2.13,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4296,25 +4296,25 @@
     },
     "2025-12-19": {
       "Sun": {
-        "degree": 27.44,
+        "degree": 27.46,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 16.89,
+        "degree": 17.17,
         "sign": "Sagittarius",
         "nakshatra": "Purva Ashadha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 9.59,
+        "degree": 9.62,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 22.98,
+        "degree": 23.01,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 2.87,
+        "degree": 2.89,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4328,25 +4328,25 @@
     },
     "2025-12-20": {
       "Sun": {
-        "degree": 28.46,
+        "degree": 28.48,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 28.9,
+        "degree": 29.18,
         "sign": "Sagittarius",
         "nakshatra": "Uttara Ashadha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 11.01,
+        "degree": 11.04,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 24.24,
+        "degree": 24.27,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 3.63,
+        "degree": 3.64,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4360,29 +4360,29 @@
     },
     "2025-12-21": {
       "Sun": {
-        "degree": 29.48,
+        "degree": 29.5,
         "sign": "Sagittarius"
       },
       "Moon": {
-        "degree": 11.01,
+        "degree": 11.29,
         "sign": "Capricorn",
         "nakshatra": "Shravana",
         "pada": 1
       },
       "Mercury": {
-        "degree": 12.44,
+        "degree": 12.48,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 25.5,
+        "degree": 25.53,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 4.38,
+        "degree": 4.4,
         "sign": "Capricorn"
       },
       "Jupiter": {
-        "degree": 22.71,
+        "degree": 22.7,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -4392,25 +4392,25 @@
     },
     "2025-12-22": {
       "Sun": {
-        "degree": 0.49,
+        "degree": 0.52,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 23.23,
+        "degree": 23.52,
         "sign": "Capricorn",
-        "nakshatra": "Shravana",
-        "pada": 2
+        "nakshatra": "Dhanishta",
+        "pada": 1
       },
       "Mercury": {
-        "degree": 13.89,
+        "degree": 13.93,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 26.76,
+        "degree": 26.79,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 5.14,
+        "degree": 5.16,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4424,25 +4424,25 @@
     },
     "2025-12-23": {
       "Sun": {
-        "degree": 1.51,
+        "degree": 1.54,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 5.59,
+        "degree": 5.88,
         "sign": "Aquarius",
         "nakshatra": "Dhanishta",
         "pada": 1
       },
       "Mercury": {
-        "degree": 15.35,
+        "degree": 15.38,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 28.02,
+        "degree": 28.05,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 5.9,
+        "degree": 5.92,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4456,25 +4456,25 @@
     },
     "2025-12-24": {
       "Sun": {
-        "degree": 2.53,
+        "degree": 2.56,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 18.11,
+        "degree": 18.41,
         "sign": "Aquarius",
         "nakshatra": "Shatabhisha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 16.82,
+        "degree": 16.85,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 29.28,
+        "degree": 29.31,
         "sign": "Sagittarius"
       },
       "Mars": {
-        "degree": 6.66,
+        "degree": 6.68,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4488,25 +4488,25 @@
     },
     "2025-12-25": {
       "Sun": {
-        "degree": 3.55,
+        "degree": 3.57,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 0.82,
+        "degree": 1.12,
         "sign": "Pisces",
         "nakshatra": "Purva Bhadrapada",
         "pada": 1
       },
       "Mercury": {
-        "degree": 18.29,
+        "degree": 18.33,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 0.54,
+        "degree": 0.57,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 7.43,
+        "degree": 7.44,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4520,29 +4520,29 @@
     },
     "2025-12-26": {
       "Sun": {
-        "degree": 4.57,
+        "degree": 4.59,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 13.77,
+        "degree": 14.08,
         "sign": "Pisces",
         "nakshatra": "Uttara Bhadrapada",
         "pada": 1
       },
       "Mercury": {
-        "degree": 19.78,
+        "degree": 19.81,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 1.8,
+        "degree": 1.83,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 8.19,
+        "degree": 8.21,
         "sign": "Capricorn"
       },
       "Jupiter": {
-        "degree": 22.11,
+        "degree": 22.1,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -4552,25 +4552,25 @@
     },
     "2025-12-27": {
       "Sun": {
-        "degree": 5.59,
+        "degree": 5.61,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 27.01,
+        "degree": 27.32,
         "sign": "Pisces",
         "nakshatra": "Revati",
         "pada": 1
       },
       "Mercury": {
-        "degree": 21.27,
+        "degree": 21.3,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 3.05,
+        "degree": 3.08,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 8.95,
+        "degree": 8.97,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4584,29 +4584,29 @@
     },
     "2025-12-28": {
       "Sun": {
-        "degree": 6.61,
+        "degree": 6.63,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 10.58,
+        "degree": 10.9,
         "sign": "Aries",
         "nakshatra": "Ashwini",
         "pada": 1
       },
       "Mercury": {
-        "degree": 22.77,
+        "degree": 22.8,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 4.31,
+        "degree": 4.34,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 9.71,
+        "degree": 9.73,
         "sign": "Capricorn"
       },
       "Jupiter": {
-        "degree": 21.86,
+        "degree": 21.85,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -4616,25 +4616,25 @@
     },
     "2025-12-29": {
       "Sun": {
-        "degree": 7.63,
+        "degree": 7.65,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 24.51,
+        "degree": 24.85,
         "sign": "Aries",
         "nakshatra": "Bharani",
         "pada": 1
       },
       "Mercury": {
-        "degree": 24.27,
+        "degree": 24.31,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 5.57,
+        "degree": 5.6,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 10.48,
+        "degree": 10.5,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4648,25 +4648,25 @@
     },
     "2025-12-30": {
       "Sun": {
-        "degree": 8.64,
+        "degree": 8.67,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 8.83,
+        "degree": 9.17,
         "sign": "Taurus",
         "nakshatra": "Krittika",
         "pada": 1
       },
       "Mercury": {
-        "degree": 25.78,
+        "degree": 25.82,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 6.83,
+        "degree": 6.86,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 11.24,
+        "degree": 11.26,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4680,25 +4680,25 @@
     },
     "2025-12-31": {
       "Sun": {
-        "degree": 9.66,
+        "degree": 9.69,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 23.48,
+        "degree": 23.83,
         "sign": "Taurus",
         "nakshatra": "Mrigashira",
         "pada": 1
       },
       "Mercury": {
-        "degree": 27.3,
+        "degree": 27.33,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 8.09,
+        "degree": 8.12,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 12.01,
+        "degree": 12.03,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4712,25 +4712,25 @@
     },
     "2026-01-01": {
       "Sun": {
-        "degree": 10.68,
+        "degree": 10.71,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 8.39,
+        "degree": 8.75,
         "sign": "Gemini",
         "nakshatra": "Ardra",
         "pada": 1
       },
       "Mercury": {
-        "degree": 28.82,
+        "degree": 28.86,
         "sign": "Sagittarius"
       },
       "Venus": {
-        "degree": 9.35,
+        "degree": 9.38,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 12.77,
+        "degree": 12.79,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4738,31 +4738,31 @@
         "sign": "Cancer"
       },
       "Saturn": {
-        "degree": 26.17,
+        "degree": 26.18,
         "sign": "Pisces"
       }
     },
     "2026-01-02": {
       "Sun": {
-        "degree": 11.7,
+        "degree": 11.73,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 23.44,
+        "degree": 23.79,
         "sign": "Gemini",
         "nakshatra": "Punarvasu",
         "pada": 1
       },
       "Mercury": {
-        "degree": 0.35,
+        "degree": 0.39,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 10.61,
+        "degree": 10.64,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 13.54,
+        "degree": 13.56,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4776,25 +4776,25 @@
     },
     "2026-01-03": {
       "Sun": {
-        "degree": 12.72,
+        "degree": 12.74,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 8.46,
+        "degree": 8.81,
         "sign": "Cancer",
         "nakshatra": "Pushya",
         "pada": 1
       },
       "Mercury": {
-        "degree": 1.89,
+        "degree": 1.92,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 11.86,
+        "degree": 11.89,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 14.31,
+        "degree": 14.33,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4802,35 +4802,35 @@
         "sign": "Cancer"
       },
       "Saturn": {
-        "degree": 26.29,
+        "degree": 26.3,
         "sign": "Pisces"
       }
     },
     "2026-01-04": {
       "Sun": {
-        "degree": 13.74,
+        "degree": 13.76,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 23.28,
+        "degree": 23.63,
         "sign": "Cancer",
         "nakshatra": "Ashlesha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 3.43,
+        "degree": 3.46,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 13.12,
+        "degree": 13.15,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 15.08,
+        "degree": 15.09,
         "sign": "Capricorn"
       },
       "Jupiter": {
-        "degree": 20.95,
+        "degree": 20.94,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -4840,25 +4840,25 @@
     },
     "2026-01-05": {
       "Sun": {
-        "degree": 14.76,
+        "degree": 14.78,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 7.78,
+        "degree": 8.12,
         "sign": "Leo",
         "nakshatra": "Magha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 4.97,
+        "degree": 5.01,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 14.38,
+        "degree": 14.41,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 15.84,
+        "degree": 15.86,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4872,25 +4872,25 @@
     },
     "2026-01-06": {
       "Sun": {
-        "degree": 15.78,
+        "degree": 15.8,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 21.86,
+        "degree": 22.18,
         "sign": "Leo",
         "nakshatra": "Purva Phalguni",
         "pada": 1
       },
       "Mercury": {
-        "degree": 6.53,
+        "degree": 6.56,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 15.64,
+        "degree": 15.67,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 16.61,
+        "degree": 16.63,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4904,29 +4904,29 @@
     },
     "2026-01-07": {
       "Sun": {
-        "degree": 16.8,
+        "degree": 16.82,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 5.46,
+        "degree": 5.78,
         "sign": "Virgo",
         "nakshatra": "Uttara Phalguni",
         "pada": 1
       },
       "Mercury": {
-        "degree": 8.09,
+        "degree": 8.12,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 16.9,
+        "degree": 16.93,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 17.38,
+        "degree": 17.4,
         "sign": "Capricorn"
       },
       "Jupiter": {
-        "degree": 20.55,
+        "degree": 20.54,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -4936,25 +4936,25 @@
     },
     "2026-01-08": {
       "Sun": {
-        "degree": 17.81,
+        "degree": 17.84,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 18.62,
+        "degree": 18.92,
         "sign": "Virgo",
         "nakshatra": "Hasta",
         "pada": 1
       },
       "Mercury": {
-        "degree": 9.65,
+        "degree": 9.69,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 18.15,
+        "degree": 18.18,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 18.15,
+        "degree": 18.17,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -4968,29 +4968,29 @@
     },
     "2026-01-09": {
       "Sun": {
-        "degree": 18.83,
+        "degree": 18.86,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 1.35,
+        "degree": 1.65,
         "sign": "Libra",
         "nakshatra": "Chitra",
         "pada": 1
       },
       "Mercury": {
-        "degree": 11.22,
+        "degree": 11.26,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 19.41,
+        "degree": 19.44,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 18.93,
+        "degree": 18.94,
         "sign": "Capricorn"
       },
       "Jupiter": {
-        "degree": 20.28,
+        "degree": 20.27,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -5000,25 +5000,25 @@
     },
     "2026-01-10": {
       "Sun": {
-        "degree": 19.85,
+        "degree": 19.88,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 13.75,
+        "degree": 14.04,
         "sign": "Libra",
         "nakshatra": "Swati",
         "pada": 1
       },
       "Mercury": {
-        "degree": 12.8,
+        "degree": 12.84,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 20.67,
+        "degree": 20.7,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 19.7,
+        "degree": 19.72,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -5032,29 +5032,29 @@
     },
     "2026-01-11": {
       "Sun": {
-        "degree": 20.87,
+        "degree": 20.9,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 25.88,
+        "degree": 26.16,
         "sign": "Libra",
         "nakshatra": "Vishakha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 14.39,
+        "degree": 14.43,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 21.93,
+        "degree": 21.96,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 20.47,
+        "degree": 20.49,
         "sign": "Capricorn"
       },
       "Jupiter": {
-        "degree": 20.01,
+        "degree": 20.0,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -5064,25 +5064,25 @@
     },
     "2026-01-12": {
       "Sun": {
-        "degree": 21.89,
+        "degree": 21.91,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 7.84,
+        "degree": 8.12,
         "sign": "Scorpio",
         "nakshatra": "Anuradha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 15.98,
+        "degree": 16.02,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 23.19,
+        "degree": 23.22,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 21.24,
+        "degree": 21.26,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -5096,29 +5096,29 @@
     },
     "2026-01-13": {
       "Sun": {
-        "degree": 22.91,
+        "degree": 22.93,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 19.7,
+        "degree": 19.98,
         "sign": "Scorpio",
         "nakshatra": "Jyeshtha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 17.59,
+        "degree": 17.62,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 24.44,
+        "degree": 24.47,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 22.02,
+        "degree": 22.04,
         "sign": "Capricorn"
       },
       "Jupiter": {
-        "degree": 19.74,
+        "degree": 19.73,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -5128,25 +5128,25 @@
     },
     "2026-01-14": {
       "Sun": {
-        "degree": 23.93,
+        "degree": 23.95,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 1.54,
+        "degree": 1.82,
         "sign": "Sagittarius",
         "nakshatra": "Mula",
         "pada": 1
       },
       "Mercury": {
-        "degree": 19.19,
+        "degree": 19.23,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 25.7,
+        "degree": 25.73,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 22.79,
+        "degree": 22.81,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -5160,25 +5160,25 @@
     },
     "2026-01-15": {
       "Sun": {
-        "degree": 24.95,
+        "degree": 24.97,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 13.43,
+        "degree": 13.71,
         "sign": "Sagittarius",
         "nakshatra": "Purva Ashadha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 20.81,
+        "degree": 20.85,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 26.96,
+        "degree": 26.99,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 23.57,
+        "degree": 23.59,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -5192,29 +5192,29 @@
     },
     "2026-01-16": {
       "Sun": {
-        "degree": 25.97,
+        "degree": 25.99,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 25.42,
+        "degree": 25.7,
         "sign": "Sagittarius",
         "nakshatra": "Purva Ashadha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 22.44,
+        "degree": 22.48,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 28.22,
+        "degree": 28.25,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 24.34,
+        "degree": 24.36,
         "sign": "Capricorn"
       },
       "Jupiter": {
-        "degree": 19.34,
+        "degree": 19.33,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -5224,25 +5224,25 @@
     },
     "2026-01-17": {
       "Sun": {
-        "degree": 26.98,
+        "degree": 27.01,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 7.54,
+        "degree": 7.83,
         "sign": "Capricorn",
         "nakshatra": "Uttara Ashadha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 24.07,
+        "degree": 24.11,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 29.47,
+        "degree": 29.5,
         "sign": "Capricorn"
       },
       "Mars": {
-        "degree": 25.12,
+        "degree": 25.14,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -5256,25 +5256,25 @@
     },
     "2026-01-18": {
       "Sun": {
-        "degree": 28.0,
+        "degree": 28.03,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 19.83,
+        "degree": 20.12,
         "sign": "Capricorn",
         "nakshatra": "Shravana",
         "pada": 1
       },
       "Mercury": {
-        "degree": 25.71,
+        "degree": 25.75,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 0.73,
+        "degree": 0.76,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 25.9,
+        "degree": 25.91,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -5288,25 +5288,25 @@
     },
     "2026-01-19": {
       "Sun": {
-        "degree": 29.02,
+        "degree": 29.05,
         "sign": "Capricorn"
       },
       "Moon": {
-        "degree": 2.29,
+        "degree": 2.59,
         "sign": "Aquarius",
         "nakshatra": "Dhanishta",
         "pada": 1
       },
       "Mercury": {
-        "degree": 27.37,
+        "degree": 27.4,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 1.99,
+        "degree": 2.02,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 26.67,
+        "degree": 26.69,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -5320,25 +5320,25 @@
     },
     "2026-01-20": {
       "Sun": {
-        "degree": 0.04,
+        "degree": 0.06,
         "sign": "Aquarius"
       },
       "Moon": {
-        "degree": 14.93,
+        "degree": 15.23,
         "sign": "Aquarius",
         "nakshatra": "Shatabhisha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 29.03,
+        "degree": 29.07,
         "sign": "Capricorn"
       },
       "Venus": {
-        "degree": 3.25,
+        "degree": 3.28,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 27.45,
+        "degree": 27.47,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -5352,25 +5352,25 @@
     },
     "2026-01-21": {
       "Sun": {
-        "degree": 1.06,
+        "degree": 1.08,
         "sign": "Aquarius"
       },
       "Moon": {
-        "degree": 27.77,
+        "degree": 28.07,
         "sign": "Aquarius",
         "nakshatra": "Purva Bhadrapada",
         "pada": 1
       },
       "Mercury": {
-        "degree": 0.7,
+        "degree": 0.74,
         "sign": "Aquarius"
       },
       "Venus": {
-        "degree": 4.5,
+        "degree": 4.53,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 28.23,
+        "degree": 28.25,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -5384,25 +5384,25 @@
     },
     "2026-01-22": {
       "Sun": {
-        "degree": 2.08,
+        "degree": 2.1,
         "sign": "Aquarius"
       },
       "Moon": {
-        "degree": 10.79,
+        "degree": 11.1,
         "sign": "Pisces",
         "nakshatra": "Uttara Bhadrapada",
         "pada": 1
       },
       "Mercury": {
-        "degree": 2.38,
+        "degree": 2.42,
         "sign": "Aquarius"
       },
       "Venus": {
-        "degree": 5.76,
+        "degree": 5.79,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 29.01,
+        "degree": 29.03,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -5416,25 +5416,25 @@
     },
     "2026-01-23": {
       "Sun": {
-        "degree": 3.09,
+        "degree": 3.12,
         "sign": "Aquarius"
       },
       "Moon": {
-        "degree": 24.01,
+        "degree": 24.33,
         "sign": "Pisces",
         "nakshatra": "Revati",
         "pada": 1
       },
       "Mercury": {
-        "degree": 4.07,
+        "degree": 4.11,
         "sign": "Aquarius"
       },
       "Venus": {
-        "degree": 7.02,
+        "degree": 7.05,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 29.79,
+        "degree": 29.8,
         "sign": "Capricorn"
       },
       "Jupiter": {
@@ -5448,29 +5448,29 @@
     },
     "2026-01-24": {
       "Sun": {
-        "degree": 4.11,
+        "degree": 4.13,
         "sign": "Aquarius"
       },
       "Moon": {
-        "degree": 7.45,
+        "degree": 7.77,
         "sign": "Aries",
         "nakshatra": "Ashwini",
         "pada": 1
       },
       "Mercury": {
-        "degree": 5.76,
+        "degree": 5.8,
         "sign": "Aquarius"
       },
       "Venus": {
-        "degree": 8.27,
+        "degree": 8.3,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 0.57,
+        "degree": 0.58,
         "sign": "Aquarius"
       },
       "Jupiter": {
-        "degree": 18.3,
+        "degree": 18.29,
         "sign": "Cancer"
       },
       "Saturn": {
@@ -5480,25 +5480,25 @@
     },
     "2026-01-25": {
       "Sun": {
-        "degree": 5.13,
+        "degree": 5.15,
         "sign": "Aquarius"
       },
       "Moon": {
-        "degree": 21.11,
+        "degree": 21.43,
         "sign": "Aries",
         "nakshatra": "Bharani",
         "pada": 1
       },
       "Mercury": {
-        "degree": 7.47,
+        "degree": 7.51,
         "sign": "Aquarius"
       },
       "Venus": {
-        "degree": 9.53,
+        "degree": 9.56,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 1.35,
+        "degree": 1.36,
         "sign": "Aquarius"
       },
       "Jupiter": {
@@ -5512,25 +5512,25 @@
     },
     "2026-01-26": {
       "Sun": {
-        "degree": 6.14,
+        "degree": 6.17,
         "sign": "Aquarius"
       },
       "Moon": {
-        "degree": 5.0,
+        "degree": 5.33,
         "sign": "Taurus",
         "nakshatra": "Krittika",
         "pada": 1
       },
       "Mercury": {
-        "degree": 9.19,
+        "degree": 9.23,
         "sign": "Aquarius"
       },
       "Venus": {
-        "degree": 10.79,
+        "degree": 10.82,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 2.13,
+        "degree": 2.14,
         "sign": "Aquarius"
       },
       "Jupiter": {
@@ -5544,25 +5544,25 @@
     },
     "2026-01-27": {
       "Sun": {
-        "degree": 7.16,
+        "degree": 7.18,
         "sign": "Aquarius"
       },
       "Moon": {
-        "degree": 19.13,
+        "degree": 19.46,
         "sign": "Taurus",
         "nakshatra": "Rohini",
         "pada": 1
       },
       "Mercury": {
-        "degree": 10.92,
+        "degree": 10.96,
         "sign": "Aquarius"
       },
       "Venus": {
-        "degree": 12.04,
+        "degree": 12.07,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 2.91,
+        "degree": 2.92,
         "sign": "Aquarius"
       },
       "Jupiter": {
@@ -5576,25 +5576,25 @@
     },
     "2026-01-28": {
       "Sun": {
-        "degree": 8.18,
+        "degree": 8.2,
         "sign": "Aquarius"
       },
       "Moon": {
-        "degree": 3.46,
+        "degree": 3.8,
         "sign": "Gemini",
         "nakshatra": "Mrigashira",
         "pada": 1
       },
       "Mercury": {
-        "degree": 12.65,
+        "degree": 12.69,
         "sign": "Aquarius"
       },
       "Venus": {
-        "degree": 13.3,
+        "degree": 13.33,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 3.69,
+        "degree": 3.71,
         "sign": "Aquarius"
       },
       "Jupiter": {
@@ -5608,25 +5608,25 @@
     },
     "2026-01-29": {
       "Sun": {
-        "degree": 9.19,
+        "degree": 9.22,
         "sign": "Aquarius"
       },
       "Moon": {
-        "degree": 17.95,
+        "degree": 18.3,
         "sign": "Gemini",
         "nakshatra": "Ardra",
         "pada": 1
       },
       "Mercury": {
-        "degree": 14.4,
+        "degree": 14.44,
         "sign": "Aquarius"
       },
       "Venus": {
-        "degree": 14.55,
+        "degree": 14.58,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 4.47,
+        "degree": 4.49,
         "sign": "Aquarius"
       },
       "Jupiter": {
@@ -5640,25 +5640,25 @@
     },
     "2026-01-30": {
       "Sun": {
-        "degree": 10.21,
+        "degree": 10.23,
         "sign": "Aquarius"
       },
       "Moon": {
-        "degree": 2.52,
+        "degree": 2.87,
         "sign": "Cancer",
         "nakshatra": "Punarvasu",
         "pada": 1
       },
       "Mercury": {
-        "degree": 16.15,
+        "degree": 16.19,
         "sign": "Aquarius"
       },
       "Venus": {
-        "degree": 15.81,
+        "degree": 15.84,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 5.25,
+        "degree": 5.27,
         "sign": "Aquarius"
       },
       "Jupiter": {
@@ -5672,25 +5672,25 @@
     },
     "2026-01-31": {
       "Sun": {
-        "degree": 11.22,
+        "degree": 11.25,
         "sign": "Aquarius"
       },
       "Moon": {
-        "degree": 17.08,
+        "degree": 17.42,
         "sign": "Cancer",
         "nakshatra": "Ashlesha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 17.91,
+        "degree": 17.95,
         "sign": "Aquarius"
       },
       "Venus": {
-        "degree": 17.06,
+        "degree": 17.09,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 6.03,
+        "degree": 6.05,
         "sign": "Aquarius"
       },
       "Jupiter": {
@@ -5698,31 +5698,31 @@
         "sign": "Cancer"
       },
       "Saturn": {
-        "degree": 28.55,
+        "degree": 28.56,
         "sign": "Pisces"
       }
     },
     "2026-02-01": {
       "Sun": {
-        "degree": 12.24,
+        "degree": 12.26,
         "sign": "Aquarius"
       },
       "Moon": {
-        "degree": 1.51,
+        "degree": 1.85,
         "sign": "Leo",
         "nakshatra": "Magha",
         "pada": 1
       },
       "Mercury": {
-        "degree": 19.67,
+        "degree": 19.71,
         "sign": "Aquarius"
       },
       "Venus": {
-        "degree": 18.32,
+        "degree": 18.35,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 6.82,
+        "degree": 6.83,
         "sign": "Aquarius"
       },
       "Jupiter": {
@@ -5736,25 +5736,25 @@
     },
     "2026-02-02": {
       "Sun": {
-        "degree": 13.25,
+        "degree": 13.28,
         "sign": "Aquarius"
       },
       "Moon": {
-        "degree": 15.72,
+        "degree": 16.05,
         "sign": "Leo",
         "nakshatra": "Purva Phalguni",
         "pada": 1
       },
       "Mercury": {
-        "degree": 21.44,
+        "degree": 21.48,
         "sign": "Aquarius"
       },
       "Venus": {
-        "degree": 19.57,
+        "degree": 19.6,
         "sign": "Aquarius"
       },
       "Mars": {
-        "degree": 7.6,
+        "degree": 7.62,
         "sign": "Aquarius"
       },
       "Jupiter": {
