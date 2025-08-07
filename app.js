@@ -1,39 +1,17 @@
-function calculatePositions() {
-    const date = document.getElementById('date').value;
-    const time = document.getElementById('time').value;
-    const latitude = parseFloat(document.getElementById('latitude').value);
-    const longitude = parseFloat(document.getElementById('longitude').value);
+// Define timezone mappings for each city label
+const cityTimezone = {
+  "Toronto": "-4",
+  "New York": "-4",
+  "London": "1",
+  "Istanbul": "3",
+  "Hyderabad": "5.5",
+  "Beijing": "8",
+  "Dubai": "4",
+  "Tokyo": "9",
+  "Sydney": "10"
+};
 
-    if (!date || !time || isNaN(latitude) || isNaN(longitude)) {
-        alert("Please enter valid inputs.");
-        return;
-    }
-
-    const mockResponse = {
-        date: date + " " + time,
-        positions: {
-            Sun: { degree: 10.25, sign: "Aries" },
-            Moon: { degree: 5.60, sign: "Taurus", nakshatra: "Rohini", pada: 2 },
-            Mercury: { degree: 18.75, sign: "Gemini" },
-            Venus: { degree: 2.15, sign: "Cancer" },
-            Mars: { degree: 27.30, sign: "Leo" },
-            Jupiter: { degree: 15.50, sign: "Virgo" },
-            Saturn: { degree: 3.80, sign: "Libra" }
-        }
-    };
-
-    let output = `Date: ${mockResponse.date}\n\nPlanet Positions:\n`;
-    for (const [planet, details] of Object.entries(mockResponse.positions)) {
-        output += `${planet}: ${details.degree}° ${details.sign}`;
-        if (planet === "Moon") {
-            output += ` (Nakshatra: ${details.nakshatra} - Pada ${details.pada})`;
-        }
-        output += `\n`;
-    }
-
-    document.getElementById('results').textContent = output;
-}
-
+// On page load
 window.addEventListener("DOMContentLoaded", () => {
   const now = new Date();
   const dateStr = now.toISOString().split("T")[0];
@@ -44,25 +22,20 @@ window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("time").value = timeStr;
   document.getElementById("tz_offset").value = tzOffset;
 
-  // Set default city: Toronto
   const defaultCityValue = "Toronto,43.6532,-79.3832";
   document.getElementById("city").value = defaultCityValue;
-  const [_, lat, lon] = defaultCityValue.split(",");
+  const [cityLabel, lat, lon] = defaultCityValue.split(",");
   document.getElementById("latitude").value = lat;
   document.getElementById("longitude").value = lon;
 
-  // Show default result on load
   calculatePositions();
 });
 
 function overrideCoordinates() {
   const cityDropdown = document.getElementById("city");
   const selected = cityDropdown.value;
-
   if (selected) {
-    const parts = selected.split(",");
-    const lat = parts[1];
-    const lon = parts[2];
+    const [ , lat, lon ] = selected.split(",");
     document.getElementById("latitude").value = lat;
     document.getElementById("longitude").value = lon;
   }
@@ -74,25 +47,58 @@ async function calculatePositions() {
   const tz = document.getElementById("tz_offset").value;
   const lat = document.getElementById("latitude").value;
   const lon = document.getElementById("longitude").value;
+  const city = document.getElementById("city").value.split(",")[0];
 
-  const url = `http://localhost:8000/api/planet-positions?date=${date}&time=${time}&tz_offset=${tz}&lat=${lat}&lon=${lon}`;
+  const apiUrl = `http://localhost:8000/api/planet-positions?date=${date}&time=${time}&tz_offset=${tz}&lat=${lat}&lon=${lon}`;
+
+  try {
+    const response = await fetch(apiUrl);
+    if (!response.ok) throw new Error(`API error ${response.status}`);
+    const data = await response.json();
+    console.log("✅ Data loaded from API");
+
+    displayPositions(data, `Date: ${data.date}`);
+  } catch (err) {
+    console.warn("⚠️ API failed, trying fallback:", err.message);
+    await fetchCachedData(city, date);
+  }
+}
+
+function displayPositions(data, header) {
+  let output = header + `\n\nPlanet Positions:\n`;
+  for (const [planet, info] of Object.entries(data.positions)) {
+    let line = `${planet}: ${info.degree}° ${info.sign}`;
+    if (info.nakshatra) {
+      line += ` (Nakshatra: ${info.nakshatra} - Pada ${info.pada})`;
+    }
+    output += line + "\n";
+  }
+  document.getElementById("results").textContent = output;
+}
+
+async function fetchCachedData(city, dateStr) {
+  const tz = cityTimezone[city] || "0";
+  const safeCity = city.replace(/ /g, "-").replace(/[()]/g, "");
+  const month = dateStr.slice(0, 7);
+  const url = `https://ahmirjat.github.io/FreeCalculators/data/planet-cache-${safeCity}-UTC${tz.replace('.', '_')}-${month}-6mo.json`;
 
   try {
     const response = await fetch(url);
-    const data = await response.json();
+    if (!response.ok) throw new Error(`Cached file not found`);
+    const cached = await response.json();
 
-    let output = `Date: ${data.date} ${time}\n\nPlanet Positions:\n`;
-    for (const [planet, info] of Object.entries(data.positions)) {
-      let line = `${planet}: ${info.degree}° ${info.sign}`;
-      if (planet === "Moon" && info.nakshatra) {
-        line += ` (Nakshatra: ${info.nakshatra} - Pada ${info.pada})`;
-      }
-      output += line + "\n";
-    }
+    const availableDates = Object.keys(cached.positions).sort();
+    let fallbackDate = availableDates.find(d => d >= dateStr) || availableDates.at(-1);
 
-    document.getElementById("results").textContent = output;
-  } catch (err) {
-    document.getElementById("results").textContent = "Failed to fetch positions.";
-    console.error(err);
+    const position = cached.positions[fallbackDate];
+    const data = {
+      date: fallbackDate,
+      positions: position
+    };
+
+    displayPositions(data, `⚠️ Showing cached data for ${city} on ${fallbackDate}`);
+  } catch (e) {
+    console.error("Fallback failed:", e.message);
+    document.getElementById("results").textContent = "API unavailable and no cached data found.";
   }
 }
