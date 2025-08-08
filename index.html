@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Solar System Calculator</title>
+  <title>Free Calculators</title>
   <style>
     body { background-color: #111; color: #eee; font-family: sans-serif; text-align: center; padding: 2em; }
     #results { white-space: pre-wrap; background: #222; padding: 1em; border: 1px solid #3a3a3a; margin-top: 1em; border-radius: 8px; }
@@ -17,6 +17,10 @@
 </head>
 <body>
 
+  <header>
+    <h1 class="site-title">FreeCalculators</h1>
+    <p class="tagline">Your free online calculation toolkit</p>
+  </header>
   <div id="input-row">
     <select id="city" onchange="overrideCoordinates()">
       <option value="Toronto,43.6532,-79.3832">Toronto</option>
@@ -42,7 +46,10 @@
 </div>
   <div id="chart" style="margin-top: 1rem;"></div>
 
-
+  <footer>
+    <p>© 2025 FreeCalculators. All rights reserved.</p>
+  </footer>
+    
   <script src="app.js"></script>
 </body>
 </html>
