@@ -279,15 +279,15 @@ function drawZodiacWheel(data) {
     dot.setAttribute("cx", px);
     dot.setAttribute("cy", py);
     dot.setAttribute("r", 4);
-    dot.setAttribute("fill", "#000");
+    dot.setAttribute("fill", "#fff");
     svg.appendChild(dot);
 
     const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
     label.setAttribute("x", px);
-    label.setAttribute("y", py - 10);
+    label.setAttribute("y", py);
     label.setAttribute("text-anchor", "middle");
     label.setAttribute("font-size", "36");
-    label.setAttribute("fill", "#ffff");
+    label.setAttribute("fill", "#000");
     label.textContent = planetSymbols[planet] || planet;
     svg.appendChild(label);
   }
