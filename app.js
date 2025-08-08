@@ -243,20 +243,21 @@ function drawZodiacWheel(data) {
 
     // Sign symbol label
     const mid = (i * 30 + 15 - 90) * Math.PI / 180;
-    const lx = cx + (r - 30) * Math.cos(mid);
-    const ly = cy + (r - 30) * Math.sin(mid);
+    const lx = cx + (r + 30) * Math.cos(mid);
+    const ly = cy + (r + 30) * Math.sin(mid);
 
     const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
     label.setAttribute("x", lx);
     label.setAttribute("y", ly);
     label.setAttribute("text-anchor", "middle");
     label.setAttribute("alignment-baseline", "middle");
-    label.setAttribute("font-size", "14");
+    label.setAttribute("font-size", "36");
     label.setAttribute("fill", "#fff");
     label.textContent = signSymbols[signs[i]];
     svg.appendChild(label);
   }
 
+    let planetDistance=40;
   // Draw planet positions
   for (const planet in data.positions) {
     const { degree, sign } = data.positions[planet];
@@ -269,22 +270,24 @@ function drawZodiacWheel(data) {
     const absDeg = signIndex * 30 + degree;
     const angle = (absDeg - 90) * Math.PI / 180;
 
-    const px = cx + (r - 20) * Math.cos(angle);
-    const py = cy + (r - 20) * Math.sin(angle);
+    const px = cx + (r - planetDistance) * Math.cos(angle);
+    const py = cy + (r - planetDistance) * Math.sin(angle);
 
-    const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      planetDistance=planetDistance+10;
+
+      const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
     dot.setAttribute("cx", px);
     dot.setAttribute("cy", py);
     dot.setAttribute("r", 4);
-    dot.setAttribute("fill", "#fff");
+    dot.setAttribute("fill", "#000");
     svg.appendChild(dot);
 
     const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
     label.setAttribute("x", px);
     label.setAttribute("y", py - 10);
     label.setAttribute("text-anchor", "middle");
-    label.setAttribute("font-size", "12");
-    label.setAttribute("fill", "#fff");
+    label.setAttribute("font-size", "36");
+    label.setAttribute("fill", "#ffff");
     label.textContent = planetSymbols[planet] || planet;
     svg.appendChild(label);
   }
