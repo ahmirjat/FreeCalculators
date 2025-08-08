@@ -11,6 +11,15 @@ const cityTimezone = {
   "Sydney": "10"
 };
 
+
+// Padas as black circled numbers
+const padaSymbols = {
+  1: "\u2460",
+  2: "\u2461",
+  3: "\u2462",
+  4: "\u2463"
+};
+
 const planetStyles = {
   "Sun":     { symbol: "☉", color: "#FFD700" }, // gold
   "Moon":    { symbol: "☽", color: "#ADD8E6" }, // light blue
@@ -38,13 +47,7 @@ const planetSymbols = {
     "Sagittarius": "♐", "Capricorn": "♑", "Aquarius": "♒", "Pisces": "♓"
   };
 const knownCacheFiles = [
-  "planet-cache-Toronto-UTC-4-2025-08-6mo.json",
-  "planet-cache-New-York-UTC-4-2025-08-6mo.json",
-  "planet-cache-London-UTC1-2025-08-6mo.json",
-  "planet-cache-Hyderabad-UTC5-2025-08-6mo.json",
-  "planet-cache-Dubai-UTC4-2025-08-6mo.json",
-  "planet-cache-Tokyo-UTC9-2025-08-6mo.json",
-  "planet-cache-Sydney-UTC10-2025-08-6mo.json"
+  "planet-cache-Toronto-UTC-4-2025-08-6mo.json"
 ];
 
 
@@ -112,7 +115,7 @@ async function calculatePositions() {
     const response = await fetch(apiUrl);
     if (!response.ok) throw new Error(`API error ${response.status}`);
     const data = await response.json();
-    displayPositions(data, `✅ Live data for ${cityLabel} on ${data.date}`);
+    displayPositions(data, `✅ Live data for ${cityLabel} on ${data.date} ${data.time}`);
     localStorage.setItem(`planetData_${date}_${lat}_${lon}`, JSON.stringify(data));
   } catch (error) {
     console.warn("⚠️ API failed, trying cache...");
@@ -127,7 +130,7 @@ async function calculatePositions() {
 }
 
 function displayPositions(data, heading = "Planet Positions") {
-  document.getElementById("results").textContent = `${heading}\n\nDate: ${data.date}\n\n`;
+  document.getElementById("results").textContent = `${heading}\n\n`;
 
   drawZodiacWheel(data); // ✅ make sure this is active
 
@@ -136,7 +139,7 @@ function displayPositions(data, heading = "Planet Positions") {
 
   const container = document.createElement("div");
   container.style.display = "grid";
-  container.style.gridTemplateColumns = "auto auto auto";
+container.style.gridTemplateColumns = "auto auto auto auto auto";
   container.style.gap = "6px";
   container.style.background = "#0b0c10";
   container.style.padding = "0.5em";
@@ -147,30 +150,45 @@ function displayPositions(data, heading = "Planet Positions") {
   ];
 
 
-  let i = 0;
+    let i = 0;
   for (const [planet, info] of Object.entries(data.positions)) {
     const row = document.createElement("div");
     row.style.display = "contents";
 
-    const cell1 = document.createElement("div");
-    const cell2 = document.createElement("div");
-    const cell3 = document.createElement("div");
+    const cell1 = document.createElement("div"); // Planet
+    const cell2 = document.createElement("div"); // Degree
+    const cell3 = document.createElement("div"); // Sign
+    const cell4 = document.createElement("div"); // Nakshatra
+    const cell5 = document.createElement("div"); // Pada
 
-const p = planetStyles[planet] || { symbol: planet, color: "#ccc" };
-
-cell1.innerHTML = `<span style="color:${p.color}">${p.symbol}</span>`;
+    const p = planetStyles[planet] || { symbol: planet, color: "#ccc" };
+    cell1.innerHTML = `<span style="color:${p.color}">${p.symbol}</span>`;
     cell2.textContent = `${info.degree.toFixed(1)}°`;
-    cell3.textContent = `${signSymbols[info.sign] || info.sign}` + (info.nakshatra ? ` ${info.nakshatra} ${info.pada}` : "");
+    cell3.textContent = `${signSymbols[info.sign] || info.sign}`;
+    cell4.textContent = info.nakshatra || "";
+    cell5.textContent = info.pada || "";
 
-    [cell1, cell2, cell3].forEach(cell => {
+            cell1.style.fontSize = "34px";
+            cell2.style.fontSize = "24px";
+            cell3.style.fontSize = "24px";
+      cell3.style.textAlign = "centre";
+                  cell4.style.fontSize = "24px";
+cell4.style.textAlign = "left";
+
+      cell5.textContent = info.pada ? (padaSymbols[info.pada] || info.pada) : "";
+
+    // Apply consistent styling
+    [cell1, cell2, cell3, cell4, cell5].forEach(cell => {
       cell.style.padding = "6px";
       cell.style.background = i % 2 === 0 ? "#1f2833" : "#182024";
       cell.style.fontFamily = "monospace";
+
     });
 
-    container.append(cell1, cell2, cell3);
+    container.append(cell1, cell2, cell3, cell4, cell5);
     i++;
   }
+
 
   chart.appendChild(container);
 }
@@ -277,17 +295,20 @@ function drawZodiacWheel(data) {
 
       const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
     dot.setAttribute("cx", px);
-    dot.setAttribute("cy", py);
-    dot.setAttribute("r", 4);
-    dot.setAttribute("fill", "#fff");
+    dot.setAttribute("cy", py-9);
+    dot.setAttribute("r", 18);
+    dot.setAttribute("fill", "#1f2833");
     svg.appendChild(dot);
 
+          const p = planetStyles[planet] || { symbol: planet, color: "#ccc" };
+      
     const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
     label.setAttribute("x", px);
     label.setAttribute("y", py);
     label.setAttribute("text-anchor", "middle");
-    label.setAttribute("font-size", "36");
-    label.setAttribute("fill", "#000");
+    label.setAttribute("font-size", "27");
+    label.setAttribute("font-style", "bold");
+    label.setAttribute("fill", p.color);
     label.textContent = planetSymbols[planet] || planet;
     svg.appendChild(label);
   }
