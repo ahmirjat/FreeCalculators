@@ -1,56 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Ensure responsive scaling on mobile -->
-  <title>FreeCalculators – Planet Positions</title>
-  <link rel="stylesheet" href="styles.css">  <!-- Link to external CSS for styles -->
-  <script src="app.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solar System Calculator</title>
+  <style>
+    body { background-color: #111; color: #eee; font-family: sans-serif; text-align: center; padding: 2em; }
+    #results { white-space: pre-wrap; background: #222; padding: 1em; border: 1px solid #3a3a3a; margin-top: 1em; border-radius: 8px; }
+    #chart ul { list-style: none; padding: 0; margin-top: 1em; }
+    #chart li { font-family: monospace; padding: 4px 8px; background-color: #1e1e1e; margin: 2px 0; border-radius: 4px; }
+    #input-row { display: flex; justify-content: center; gap: 0.5em; flex-wrap: wrap; margin-bottom: 1em; }
+    #input-row select, #input-row input, #input-row button { font-size: 1em; padding: 0.4em; }
+    button { background: #44a; color: #fff; border: none; cursor: pointer; border-radius: 4px; }
+  </style>
+
 </head>
 <body>
 
-  <!-- Header: Site title and optional subtitle/logo -->
-  <header>
-    <h1 class="site-title">FreeCalculators</h1>
-    <p class="tagline">Your free online calculation toolkit</p>
-  </header>
-
-  <!-- Main content: Planet Positions Calculator UI -->
-  <main>
-    <h2>Planet Positions Calculator</h2>
+  <div id="input-row">
+    <select id="city" onchange="overrideCoordinates()">
+      <option value="Toronto,43.6532,-79.3832">Toronto</option>
+      <option value="New York,40.7128,-74.0060">New York</option>
+      <option value="London,51.5074,-0.1278">London</option>
+      <option value="Hyderabad,25.3960,68.3578">Hyderabad</option>
+      <option value="Dubai,25.276987,55.296249">Dubai</option>
+      <option value="Tokyo,35.6895,139.6917">Tokyo</option>
+      <option value="Sydney,-33.8688,151.2093">Sydney</option>
+    </select>
     <input type="date" id="date">
     <input type="time" id="time">
-    <input type="hidden" id="tz_offset">
-    <label for="city">Or select a different city:</label>
-    <select id="city" onchange="overrideCoordinates()">
-  <option value="">-- Use detected location --</option>
-            "Toronto": "-4",
-    "New York": "-4",
-    "London": "1",
-    "Hyderabad": "5",
-    "Dubai": "4",
-    "Tokyo": "9",
-    "Sydney": "10"
-  <option value="Toronto,43.6532,-79.3832">Toronto</option>
-  <option value="New York,40.7128,-74.0060">New York</option>
-  <option value="London,51.5074,-0.1278">London</option>
-  <option value="Tokyo,35.6895,139.6917">Tokyo</option>
-  <option value="Dubai,25.276987,55.296249">Dubai</option>
-    </select>
+    <button onclick="calculatePositions()">⚙️</button>
+  </div>
 
-    <input type="hidden" id="latitude">
-    <input type="hidden" id="longitude">
+  <input type="hidden" id="tz_offset">
+  <input type="hidden" id="latitude">
+  <input type="hidden" id="longitude">
 
-    <button onclick="calculatePositions()">Calculate</button>
-    <pre id="results">No data yet.</pre>
-    <small>Initial result is for Toronto (City Hall). Select another city to update.</small>
+    <div id="results" class="result-banner"></div>
+<div id="wheel-container" style="text-align: center; margin: 1em auto;">
+  <svg id="zodiac-wheel" width="400" height="400" viewBox="0 0 400 400"></svg>
+</div>
+  <div id="chart" style="margin-top: 1rem;"></div>
 
-  </main>
 
-  <!-- Footer: Placeholder for attribution or links -->
-  <footer>
-    <p>© 2025 FreeCalculators. All rights reserved.</p>
-  </footer>
-
+  <script src="app.js"></script>
 </body>
 </html>

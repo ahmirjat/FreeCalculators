@@ -82,3 +82,39 @@ footer p {
   margin: 0;
   font-size: 0.9rem;
 }
+
+#chart ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+}
+#chart li {
+  font-family: monospace;
+  padding: 4px 8px;
+  background-color: #1f2833;
+  color: #eee;
+  border-bottom: 1px solid #333;
+}
+
+#chart div {
+  text-align: left;
+}
+
+.result-banner {
+  margin-top: 1em;
+  background: #222;
+  color: #fff;
+  padding: 1em;
+  border-radius: 6px;
+  font-family: sans-serif;
+}
+
+#zodiac-wheel {
+  display: block;
+  width: 400px;
+  height: 400px;
+  background: #111;
+  margin: auto;
+}
+
+
