@@ -127,6 +127,7 @@ function overrideCoordinates() {
   }
 }
 
+
 // === CALCULATE POSITIONS ===
 async function calculatePositions() {
   const date = document.getElementById("date").value;
@@ -297,15 +298,22 @@ function drawZodiacWheel(data) {
     const lx = cx + (r + 30) * Math.cos(mid);
     const ly = cy + (r + 30) * Math.sin(mid);
 
-    const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    label.setAttribute("x", lx);
-    label.setAttribute("y", ly);
-    label.setAttribute("text-anchor", "middle");
-    label.setAttribute("alignment-baseline", "middle");
-    label.setAttribute("font-size", "36");
-    label.setAttribute("fill", "#fff");
-    label.textContent = signSymbols[signs[i]];
-    svg.appendChild(label);
+const link = document.createElementNS("http://www.w3.org/2000/svg", "a");
+link.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", `content/signs/${signs[i].toLowerCase()}.html`);
+link.setAttribute("target", "_self"); // or "_blank" if you want new tab
+
+const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+label.setAttribute("x", lx);
+label.setAttribute("y", ly);
+label.setAttribute("text-anchor", "middle");
+label.setAttribute("alignment-baseline", "middle");
+label.setAttribute("font-size", "36");
+label.setAttribute("fill", "#fff");
+label.textContent = signSymbols[signs[i]];
+
+link.appendChild(label);
+svg.appendChild(link);
+
   }
 
     let planetDistance=40;
@@ -325,25 +333,33 @@ function drawZodiacWheel(data) {
     const py = cy + (r - planetDistance) * Math.sin(angle);
 
       planetDistance=planetDistance+10;
-
-      const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-    dot.setAttribute("cx", px);
-    dot.setAttribute("cy", py-9);
-    dot.setAttribute("r", 18);
-dot.setAttribute("fill", "rgba(15, 20, 25, 0.6)"); // darker + a bit more opaque
-    svg.appendChild(dot);
-
+      
           const p = planetStyles[planet] || { symbol: planet, color: "#ccc" };
       
-    const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    label.setAttribute("x", px);
-    label.setAttribute("y", py);
-    label.setAttribute("text-anchor", "middle");
-    label.setAttribute("font-size", "27");
-    label.setAttribute("font-style", "bold");
-    label.setAttribute("fill", p.color);
-    label.textContent = planetSymbols[planet] || planet;
-    svg.appendChild(label);
+  const link = document.createElementNS("http://www.w3.org/2000/svg", "a");
+link.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", `content/planets/${planet.toLowerCase()}.html`);
+link.setAttribute("target", "_self");
+
+const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+dot.setAttribute("cx", px);
+dot.setAttribute("cy", py-9);
+dot.setAttribute("r", 18);
+dot.setAttribute("fill", "rgba(15, 20, 25, 0.6)");
+
+const pStyle = planetStyles[planet] || { symbol: planet, color: "#ccc" };
+const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+label.setAttribute("x", px);
+label.setAttribute("y", py);
+label.setAttribute("text-anchor", "middle");
+label.setAttribute("font-size", "27");
+label.setAttribute("fill", pStyle.color);
+label.textContent = planetSymbols[planet] || planet;
+
+link.appendChild(dot);
+link.appendChild(label);
+svg.appendChild(link);
+
   }
+    
 }
 

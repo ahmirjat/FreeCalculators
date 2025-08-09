@@ -1,0 +1,15 @@
+:root { --maxw: 860px; }
+.content { max-width: var(--maxw); margin: 0 auto; padding: 16px; }
+.content h1 { font-size: 2rem; margin: 12px 0; }
+.content h2 { margin-top: 20px; font-size: 1.25rem; }
+.meta { opacity:.8; font-size:.95rem; margin-bottom: 8px; }
+.card { border:1px solid #222; border-radius: 12px; padding: 16px; margin: 12px 0; }
+.back { display:inline-block; margin: 12px 0; text-decoration:none; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
+.tile { border:1px solid #222; border-radius:12px; padding:16px; text-decoration:none; display:block; }
+.tile .emoji { font-size: 36px; }
+.tile .title { font-weight:700; margin-top:8px; }
+.tile .desc { opacity:.8; margin-top:6px; font-size:.95rem; }
+.tile { background: #14161b; border-color: #252a32; box-shadow: 0 1px 0 #0b0d10; }
+.tile:hover { transform: translateY(-2px); border-color:#3b4250; }
+h2 { color:#cfd3da }

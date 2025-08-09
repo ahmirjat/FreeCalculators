@@ -1,0 +1,28 @@
+{
+  "planets": [
+    {"slug":"sun","title":"Sun","emoji":"☉"},
+    {"slug":"moon","title":"Moon","emoji":"☾"},
+    {"slug":"mercury","title":"Mercury","emoji":"☿"},
+    {"slug":"venus","title":"Venus","emoji":"♀"},
+    {"slug":"mars","title":"Mars","emoji":"♂"},
+    {"slug":"jupiter","title":"Jupiter","emoji":"♃"},
+    {"slug":"saturn","title":"Saturn","emoji":"♄"},
+    {"slug":"uranus","title":"Uranus","emoji":"⛢"},
+    {"slug":"neptune","title":"Neptune","emoji":"♆"},
+    {"slug":"pluto","title":"Pluto","emoji":"♇"}
+  ],
+  "signs": [
+    {"slug":"aries","title":"Aries","emoji":"♈"},
+    {"slug":"taurus","title":"Taurus","emoji":"♉"},
+    {"slug":"gemini","title":"Gemini","emoji":"♊"},
+    {"slug":"cancer","title":"Cancer","emoji":"♋"},
+    {"slug":"leo","title":"Leo","emoji":"♌"},
+    {"slug":"virgo","title":"Virgo","emoji":"♍"},
+    {"slug":"libra","title":"Libra","emoji":"♎"},
+    {"slug":"scorpio","title":"Scorpio","emoji":"♏"},
+    {"slug":"sagittarius","title":"Sagittarius","emoji":"♐"},
+    {"slug":"capricorn","title":"Capricorn","emoji":"♑"},
+    {"slug":"aquarius","title":"Aquarius","emoji":"♒"},
+    {"slug":"pisces","title":"Pisces","emoji":"♓"}
+  ]
+}

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Explore Planets & Signs • Free Calculators</title>
+<link rel="stylesheet" href="../assets/styles.css"/>
+<link rel="stylesheet" href="./content.css"/>
+<style>
+  :root {
+    --bg: #0e0f12;
+    --fg: #e6e6e6;
+    --muted: #a6adbb;
+    --card: #14161b;
+    --card-border: #252a32;
+    --card-border-hover: #3b4250;
+    --ring: rgba(255,255,255,.06);
+    --shadow: rgba(0,0,0,.5);
+    --maxw: 960px;
+  }
+  html, body { background: var(--bg); color: var(--fg); }
+  .content { max-width: var(--maxw); margin: 0 auto; padding: 20px; }
+
+  .topbar { display:flex; align-items:center; gap:12px; margin-bottom: 16px; }
+  .back { text-decoration:none; color: var(--fg); opacity:.9 }
+  .title { font-size: 1.9rem; letter-spacing:.2px; margin: 0; }
+
+  .section { margin-top: 28px; }
+  .section h2 { font-size: 1.2rem; color: var(--fg); margin: 0 0 12px }
+
+  .grid { 
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap:16px; 
+  }
+  .tile {
+    display:block;
+    text-decoration:none;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .tile:hover {
+    transform: translateY(-2px);
+    border-color: var(--card-border-hover);
+    box-shadow: 0 6px 18px var(--shadow);
+  }
+
+  /* Accent ring using per-tile CSS var --accent */
+  .tile::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    padding: 1px;
+    background: radial-gradient(120% 120% at 80% 0%, var(--accent, var(--ring)), transparent 60%);
+    -webkit-mask: 
+      linear-gradient(#000 0 0) content-box, 
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .row { display:flex; align-items: center; gap: 14px; }
+  .badge {
+    width: 56px; height: 56px;
+    display:grid; place-items:center;
+    border-radius: 12px;
+    background: rgba(255,255,255,.03);
+    border: 1px solid var(--card-border);
+    font-size: 30px;
+    line-height: 1;
+    flex: 0 0 auto;
+    transition: transform .15s ease;
+  }
+  .tile:hover .badge { transform: scale(1.05); }
+
+  .text { display:flex; flex-direction:column; min-width:0 }
+  .title-sm { font-weight: 700; font-size: 1.02rem; color: var(--fg); }
+  .desc { color: var(--muted); margin-top: 4px; font-size: .95rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+  /* small filter row (optional, no JS needed for now) */
+  .filters { display:flex; gap:8px; flex-wrap:wrap; margin-top:4px; }
+  .chip { padding:6px 10px; border:1px solid var(--card-border); border-radius:999px; font-size:.9rem; opacity:.85 }
+
+  /* sign tiles: subtle neutral accent */
+  .tile.sign { --accent: rgba(255,255,255,.08); }
+</style>
+</head>
+    
+<body>
+<div class="content">
+  <div class="topbar">
+    <a class="back" href="../index.html">← Home</a>
+    <h1 class="title">Explore Planets & Signs</h1>
+  </div>
+
+  <div class="section">
+    <h2>Planets</h2>
+    <div class="grid" id="planetGrid"></div>
+  </div>
+
+  <div class="section">
+    <h2>Signs</h2>
+    <div class="grid" id="signGrid"></div>
+  </div>
+</div>
+
+<script>
+/* === Your palette === */
+const planetStyles = {
+  "Sun":     { symbol: "☉", color: "#FFD700" }, // gold
+  "Moon":    { symbol: "☽", color: "#ADD8E6" }, // light blue
+  "Mercury": { symbol: "☿", color: "#87CEEB" }, // sky blue
+  "Venus":   { symbol: "♀", color: "#FF69B4" }, // pink
+  "Mars":    { symbol: "♂", color: "#FF4500" }, // red-orange
+  "Jupiter": { symbol: "♃", color: "#FFA500" }, // orange
+  "Saturn":  { symbol: "♄", color: "#DAA520" }, // goldenrod
+  "Uranus":  { symbol: "⛢", color: "#40E0D0" }, // turquoise
+  "Neptune": { symbol: "♆", color: "#4169E1" }, // royal blue
+  "Pluto":   { symbol: "♇", color: "#8B008B" }, // dark magenta
+  "Rahu":    { symbol: "☊", color: "#999999" }, // gray
+  "Ketu":    { symbol: "☋", color: "#666666" }  // darker gray
+};
+
+const META = {
+  planets: [
+    {slug:"sun",title:"Sun"},
+    {slug:"moon",title:"Moon"},
+    {slug:"mercury",title:"Mercury"},
+    {slug:"venus",title:"Venus"},
+    {slug:"mars",title:"Mars"},
+    {slug:"jupiter",title:"Jupiter"},
+    {slug:"saturn",title:"Saturn"},
+    {slug:"uranus",title:"Uranus"},
+    {slug:"neptune",title:"Neptune"},
+    {slug:"pluto",title:"Pluto"}
+    // If you want Rahu/Ketu pages later, just add:
+    // ,{slug:"rahu",title:"Rahu"}, {slug:"ketu",title:"Ketu"}
+  ],
+  signs: [
+    {slug:"aries",title:"Aries",emoji:"♈"},
+    {slug:"taurus",title:"Taurus",emoji:"♉"},
+    {slug:"gemini",title:"Gemini",emoji:"♊"},
+    {slug:"cancer",title:"Cancer",emoji:"♋"},
+    {slug:"leo",title:"Leo",emoji:"♌"},
+    {slug:"virgo",title:"Virgo",emoji:"♍"},
+    {slug:"libra",title:"Libra",emoji:"♎"},
+    {slug:"scorpio",title:"Scorpio",emoji:"♏"},
+    {slug:"sagittarius",title:"Sagittarius",emoji:"♐"},
+    {slug:"capricorn",title:"Capricorn",emoji:"♑"},
+    {slug:"aquarius",title:"Aquarius",emoji:"♒"},
+    {slug:"pisces",title:"Pisces",emoji:"♓"}
+  ]
+};
+
+const esc = s => String(s ?? "");
+
+/* Build a planet tile with color accent from planetStyles */
+function planetTile(p) {
+  const st = planetStyles[p.title] || { symbol: "🪐", color: "#6aa3ff" };
+  const accent = st.color;
+  const symbol = st.symbol;
+
+  return `
+  <a class="tile planet" href="./planets/${esc(p.slug)}.html" style="--accent:${accent}33">
+    <div class="row">
+      <div class="badge" style="border-color:${accent}66;">
+        <span style="color:${accent};">${symbol}</span>
+      </div>
+      <div class="text">
+        <div class="title-sm" style="color:${accent};">${esc(p.title)}</div>
+        <div class="desc">Myth, food & fun facts</div>
+      </div>
+    </div>
+  </a>`;
+}
+
+/* Build a sign tile (neutral accent; emoji from META) */
+function signTile(s) {
+  return `
+  <a class="tile sign" href="./signs/${esc(s.slug)}.html">
+    <div class="row">
+      <div class="badge"><span>${esc(s.emoji || "♈")}</span></div>
+      <div class="text">
+        <div class="title-sm">${esc(s.title)}</div>
+        <div class="desc">Traits, myth & pairings</div>
+      </div>
+    </div>
+  </a>`;
+}
+
+document.getElementById('planetGrid').innerHTML = META.planets.map(planetTile).join('');
+document.getElementById('signGrid').innerHTML   = META.signs.map(signTile).join('');
+</script>
+<div id="nav-root"></div>
+<script defer src="../assets/nav.js"></script>
+
+
+
+</body>
+</html>
