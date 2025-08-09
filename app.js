@@ -11,6 +11,33 @@ const cityTimezone = {
   "Sydney": "10"
 };
 
+// 1–27 index for nakshatras
+const nakshatraIndex = {
+  "Ashwini":1, "Bharani":2, "Krittika":3, "Rohini":4, "Mrigashira":5,
+  "Ardra":6, "Punarvasu":7, "Pushya":8, "Ashlesha":9, "Magha":10,
+  "Purva Phalguni":11, "Uttara Phalguni":12, "Hasta":13, "Chitra":14, "Swati":15,
+  "Vishakha":16, "Anuradha":17, "Jyeshta":18, "Mula":19, "Purva Ashadha":20,
+  "Uttara Ashadha":21, "Shravana":22, "Dhanishta":23, "Shatabhisha":24,
+  "Purva Bhadrapada":25, "Uttara Bhadrapada":26, "Revati":27
+};
+
+// ①..⑳, then ㉑..㉗
+function circledNum(n){
+  if (n>=1 && n<=20) return String.fromCharCode(0x2460 + (n-1));
+  if (n>=21 && n<=27) return String.fromCharCode(0x3251 + (n-21));
+  return String(n);
+}
+
+// Optional tiny abbreviations for readability
+const nakshatraAbbr = {
+  "Ashwini":"Aśv","Bharani":"Bhr","Krittika":"Kri","Rohini":"Roh","Mrigashira":"Mṛg",
+  "Ardra":"Ard","Punarvasu":"Pun","Pushya":"Puṣ","Ashlesha":"Aśl","Magha":"Mag",
+  "Purva Phalguni":"PPha","Uttara Phalguni":"UPha","Hasta":"Has","Chitra":"Chi","Swati":"Swa",
+  "Vishakha":"Viś","Anuradha":"Anu","Jyeshta":"Jye","Mula":"Mul","Purva Ashadha":"PAś",
+  "Uttara Ashadha":"UAś","Shravana":"Shr","Dhanishta":"Dha","Shatabhisha":"Sha",
+  "Purva Bhadrapada":"PBr","Uttara Bhadrapada":"UBr","Revati":"Rev"
+};
+
 
 // Padas as black circled numbers
 const padaSymbols = {
@@ -165,14 +192,20 @@ container.style.gridTemplateColumns = "auto auto auto auto auto";
     cell1.innerHTML = `<span style="color:${p.color}">${p.symbol}</span>`;
     cell2.textContent = `${info.degree.toFixed(1)}°`;
     cell3.textContent = `${signSymbols[info.sign] || info.sign}`;
-    cell4.textContent = info.nakshatra || "";
+if (info.nakshatra) {
+  const idx = nakshatraIndex[info.nakshatra];
+  const icon = circledNum(idx);
+  const abbr = nakshatraAbbr[info.nakshatra] || info.nakshatra;
+  cell4.innerHTML = `<span title="${info.nakshatra}" style="margin-right:6px">${icon}</span><span class="badge">${abbr}</span>`;
+} else {
+  cell4.textContent = "";
+}
     cell5.textContent = info.pada || "";
 
             cell1.style.fontSize = "34px";
             cell2.style.fontSize = "24px";
             cell3.style.fontSize = "24px";
       cell3.style.textAlign = "centre";
-                  cell4.style.fontSize = "24px";
 cell4.style.textAlign = "left";
 
       cell5.textContent = info.pada ? (padaSymbols[info.pada] || info.pada) : "";
@@ -297,7 +330,7 @@ function drawZodiacWheel(data) {
     dot.setAttribute("cx", px);
     dot.setAttribute("cy", py-9);
     dot.setAttribute("r", 18);
-    dot.setAttribute("fill", "#1f2833");
+dot.setAttribute("fill", "rgba(31, 40, 51, 0.5)");
     svg.appendChild(dot);
 
           const p = planetStyles[planet] || { symbol: planet, color: "#ccc" };
