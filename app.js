@@ -330,7 +330,7 @@ function drawZodiacWheel(data) {
     dot.setAttribute("cx", px);
     dot.setAttribute("cy", py-9);
     dot.setAttribute("r", 18);
-dot.setAttribute("fill", "rgba(31, 40, 51, 0.5)");
+dot.setAttribute("fill", "rgba(15, 20, 25, 0.6)"); // darker + a bit more opaque
     svg.appendChild(dot);
 
           const p = planetStyles[planet] || { symbol: planet, color: "#ccc" };
