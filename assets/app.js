@@ -344,40 +344,121 @@ function drawZodiacWheel(data) {
     svg.appendChild(link);
   }
 
-  let planetDistance = 40;
+  const planetsBySign = new Map(signs.map(sign => [sign, []]));
   for (const planet in data.positions) {
     const { degree, sign } = data.positions[planet];
     const signIndex = signs.indexOf(sign);
     if (signIndex === -1 || !Number.isFinite(degree)) continue;
 
     const absDeg = signIndex * 30 + degree;
-    const angle = (absDeg - 90) * Math.PI / 180;
-    const px = cx + (r - planetDistance) * Math.cos(angle);
-    const py = cy + (r - planetDistance) * Math.sin(angle);
-    planetDistance = Math.min(112, planetDistance + 9);
+    planetsBySign.get(sign).push({ planet, degree, signIndex, absDeg });
+  }
 
-    const pStyle = planetStyles[planet] || { symbol: planet, color: "#ccc" };
-    const link = document.createElementNS("http://www.w3.org/2000/svg", "a");
-    link.setAttribute("href", `content/planets/${planet.toLowerCase()}.html`);
+  const placedPlanets = [];
+  const labelRadii = [64, 88, 112, 132];
+  const angleOffsets = [0, -3, 3, -6, 6, -9, 9];
+  const collidesWithPlaced = (x, y) => placedPlanets.some((placed) => {
+    const dx = x - placed.x;
+    const dy = y - placed.y;
+    return Math.sqrt(dx * dx + dy * dy) < 28;
+  });
 
-    const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-    dot.setAttribute("cx", px);
-    dot.setAttribute("cy", py - 8);
-    dot.setAttribute("r", 17);
-    dot.setAttribute("fill", "rgba(13, 17, 24, 0.72)");
-    dot.setAttribute("stroke", pStyle.color);
-    dot.setAttribute("stroke-width", "1");
+  for (const sign of signs) {
+    const signPlanets = planetsBySign.get(sign).sort((a, b) => a.absDeg - b.absDeg);
+    const signIndex = signs.indexOf(sign);
+    const signStart = signIndex * 30;
+    const signEnd = signStart + 30;
+    const sectorPadding = 4;
 
-    const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    label.setAttribute("x", px);
-    label.setAttribute("y", py);
-    label.setAttribute("text-anchor", "middle");
-    label.setAttribute("font-size", "25");
-    label.setAttribute("fill", pStyle.color);
-    label.textContent = planetSymbols[planet] || planet;
+    signPlanets.forEach((item, index) => {
+      const count = signPlanets.length;
+      const exactAngle = (item.absDeg - 90) * Math.PI / 180;
+      let displayDeg = item.absDeg;
 
-    link.appendChild(dot);
-    link.appendChild(label);
-    svg.appendChild(link);
+      if (count > 1) {
+        const usableStart = signStart + sectorPadding;
+        const usableEnd = signEnd - sectorPadding;
+        const slotSize = (usableEnd - usableStart) / Math.max(count - 1, 1);
+        displayDeg = usableStart + slotSize * index;
+      }
+
+      let displayAngle = (displayDeg - 90) * Math.PI / 180;
+      let labelRadius = labelRadii[index % labelRadii.length];
+      const exactRadius = r - 14;
+      let px = cx + labelRadius * Math.cos(displayAngle);
+      let py = cy + labelRadius * Math.sin(displayAngle);
+      const ex = cx + exactRadius * Math.cos(exactAngle);
+      const ey = cy + exactRadius * Math.sin(exactAngle);
+
+      const candidates = [];
+      for (const radius of labelRadii) {
+        for (const offset of angleOffsets) {
+          const candidateDeg = Math.min(signEnd - 3, Math.max(signStart + 3, displayDeg + offset));
+          const angle = (candidateDeg - 90) * Math.PI / 180;
+          candidates.push({
+            angle,
+            radius,
+            x: cx + radius * Math.cos(angle),
+            y: cy + radius * Math.sin(angle),
+          });
+        }
+      }
+
+      const cleanCandidate = candidates.find((candidate) => !collidesWithPlaced(candidate.x, candidate.y));
+      if (cleanCandidate) {
+        displayAngle = cleanCandidate.angle;
+        labelRadius = cleanCandidate.radius;
+        px = cleanCandidate.x;
+        py = cleanCandidate.y;
+      }
+      placedPlanets.push({ x: px, y: py });
+
+      const pStyle = planetStyles[item.planet] || { symbol: item.planet, color: "#ccc" };
+      const link = document.createElementNS("http://www.w3.org/2000/svg", "a");
+      link.setAttribute("href", `content/planets/${item.planet.toLowerCase()}.html`);
+
+      const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
+      title.textContent = `${item.planet}: ${item.degree.toFixed(2)}° ${sign}`;
+
+      const guide = document.createElementNS("http://www.w3.org/2000/svg", "line");
+      guide.setAttribute("x1", ex);
+      guide.setAttribute("y1", ey);
+      guide.setAttribute("x2", px);
+      guide.setAttribute("y2", py);
+      guide.setAttribute("stroke", pStyle.color);
+      guide.setAttribute("stroke-width", "0.8");
+      guide.setAttribute("stroke-opacity", count > 1 ? "0.45" : "0.18");
+
+      const exactDot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      exactDot.setAttribute("cx", ex);
+      exactDot.setAttribute("cy", ey);
+      exactDot.setAttribute("r", "2.8");
+      exactDot.setAttribute("fill", pStyle.color);
+      exactDot.setAttribute("fill-opacity", "0.9");
+
+      const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      dot.setAttribute("cx", px);
+      dot.setAttribute("cy", py - 6);
+      dot.setAttribute("r", "12");
+      dot.setAttribute("fill", "rgba(13, 17, 24, 0.82)");
+      dot.setAttribute("stroke", pStyle.color);
+      dot.setAttribute("stroke-width", "1");
+
+      const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      label.setAttribute("x", px);
+      label.setAttribute("y", py);
+      label.setAttribute("text-anchor", "middle");
+      label.setAttribute("font-size", "17");
+      label.setAttribute("fill", pStyle.color);
+      label.setAttribute("font-weight", "700");
+      label.textContent = planetSymbols[item.planet] || item.planet;
+
+      link.appendChild(title);
+      link.appendChild(guide);
+      link.appendChild(exactDot);
+      link.appendChild(dot);
+      link.appendChild(label);
+      svg.appendChild(link);
+    });
   }
 }
