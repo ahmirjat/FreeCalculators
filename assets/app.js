@@ -420,19 +420,37 @@ function drawZodiacWheel(data) {
       const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
       title.textContent = `${item.planet}: ${item.degree.toFixed(2)}° ${sign}`;
 
+      const guideUnderlay = document.createElementNS("http://www.w3.org/2000/svg", "line");
+      guideUnderlay.setAttribute("x1", ex);
+      guideUnderlay.setAttribute("y1", ey);
+      guideUnderlay.setAttribute("x2", px);
+      guideUnderlay.setAttribute("y2", py);
+      guideUnderlay.setAttribute("stroke", "#05070b");
+      guideUnderlay.setAttribute("stroke-width", "2.4");
+      guideUnderlay.setAttribute("stroke-linecap", "round");
+      guideUnderlay.setAttribute("stroke-opacity", "0.58");
+
       const guide = document.createElementNS("http://www.w3.org/2000/svg", "line");
       guide.setAttribute("x1", ex);
       guide.setAttribute("y1", ey);
       guide.setAttribute("x2", px);
       guide.setAttribute("y2", py);
-      guide.setAttribute("stroke", pStyle.color);
-      guide.setAttribute("stroke-width", "0.8");
-      guide.setAttribute("stroke-opacity", count > 1 ? "0.45" : "0.18");
+      guide.setAttribute("stroke", "#f3f7fb");
+      guide.setAttribute("stroke-width", "1");
+      guide.setAttribute("stroke-linecap", "round");
+      guide.setAttribute("stroke-opacity", count > 1 ? "0.62" : "0.34");
+
+      const exactHalo = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      exactHalo.setAttribute("cx", ex);
+      exactHalo.setAttribute("cy", ey);
+      exactHalo.setAttribute("r", "5.3");
+      exactHalo.setAttribute("fill", "#05070b");
+      exactHalo.setAttribute("fill-opacity", "0.62");
 
       const exactDot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       exactDot.setAttribute("cx", ex);
       exactDot.setAttribute("cy", ey);
-      exactDot.setAttribute("r", "2.8");
+      exactDot.setAttribute("r", "3.2");
       exactDot.setAttribute("fill", pStyle.color);
       exactDot.setAttribute("fill-opacity", "0.9");
 
@@ -454,7 +472,9 @@ function drawZodiacWheel(data) {
       label.textContent = planetSymbols[item.planet] || item.planet;
 
       link.appendChild(title);
+      link.appendChild(guideUnderlay);
       link.appendChild(guide);
+      link.appendChild(exactHalo);
       link.appendChild(exactDot);
       link.appendChild(dot);
       link.appendChild(label);
