@@ -4,7 +4,7 @@ const cityTimezone = {
   "Toronto": "-4",
   "New York": "-4",
   "London": "1",
-  "Hyderabad Pakistan": "5",
+  "Hyderabad": "5",
   "Dubai": "4",
   "Tokyo": "9",
   "Sydney": "10"
@@ -64,7 +64,7 @@ const knownCacheFiles = [
   "planet-cache-Toronto-UTC-4-2025-08-6mo.json",
   "planet-cache-New-York-UTC-4-2025-08-6mo.json",
   "planet-cache-London-UTC1-2025-08-6mo.json",
-  "planet-cache-Hyderabad-Pakistan-UTC5-2025-08-6mo.json",
+  "planet-cache-Hyderabad-UTC5-2025-08-6mo.json",
   "planet-cache-Dubai-UTC4-2025-08-6mo.json",
   "planet-cache-Tokyo-UTC9-2025-08-6mo.json",
   "planet-cache-Sydney-UTC10-2025-08-6mo.json"
