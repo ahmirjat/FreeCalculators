@@ -54,21 +54,6 @@ const planetSymbols = Object.fromEntries(
   Object.entries(planetStyles).map(([planet, style]) => [planet, style.symbol])
 );
 
-const markerSymbols = {
-  "Sun": "\u2726",
-  "Moon": "\u263e",
-  "Mercury": "\u2624",
-  "Venus": "\u2727",
-  "Mars": "\u271a",
-  "Jupiter": "\u26a1",
-  "Saturn": "\u231b",
-  "Uranus": "\u2737",
-  "Neptune": "\u2248",
-  "Pluto": "\u25c6",
-  "Rahu": "\u260a",
-  "Ketu": "\u260b"
-};
-
 const signSymbols = {
   "Aries": "♈", "Taurus": "♉", "Gemini": "♊", "Cancer": "♋",
   "Leo": "♌", "Virgo": "♍", "Libra": "♎", "Scorpio": "♏",
@@ -399,11 +384,8 @@ function drawZodiacWheel(data) {
 
       let displayAngle = (displayDeg - 90) * Math.PI / 180;
       let labelRadius = labelRadii[index % labelRadii.length];
-      const exactRadius = r - 14;
       let px = cx + labelRadius * Math.cos(displayAngle);
       let py = cy + labelRadius * Math.sin(displayAngle);
-      const ex = cx + exactRadius * Math.cos(exactAngle);
-      const ey = cy + exactRadius * Math.sin(exactAngle);
 
       const candidates = [];
       for (const radius of labelRadii) {
@@ -435,62 +417,6 @@ function drawZodiacWheel(data) {
       const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
       title.textContent = `${item.planet}: ${item.degree.toFixed(2)}° ${sign}`;
 
-      const guideVectorX = px - ex;
-      const guideVectorY = py - ey;
-      const guideVectorLength = Math.max(1, Math.sqrt(guideVectorX * guideVectorX + guideVectorY * guideVectorY));
-      const guideUnitX = guideVectorX / guideVectorLength;
-      const guideUnitY = guideVectorY / guideVectorLength;
-      const guideStart = 9;
-      const guideLength = Math.min(28, Math.max(14, guideVectorLength - 22));
-      const guideX1 = ex + guideUnitX * guideStart;
-      const guideY1 = ey + guideUnitY * guideStart;
-      const guideX2 = ex + guideUnitX * (guideStart + guideLength);
-      const guideY2 = ey + guideUnitY * (guideStart + guideLength);
-
-      const guideUnderlay = document.createElementNS("http://www.w3.org/2000/svg", "line");
-      guideUnderlay.setAttribute("x1", guideX1);
-      guideUnderlay.setAttribute("y1", guideY1);
-      guideUnderlay.setAttribute("x2", guideX2);
-      guideUnderlay.setAttribute("y2", guideY2);
-      guideUnderlay.setAttribute("stroke", "#05070b");
-      guideUnderlay.setAttribute("stroke-width", "2.8");
-      guideUnderlay.setAttribute("stroke-linecap", "round");
-      guideUnderlay.setAttribute("stroke-opacity", "0.7");
-
-      const guide = document.createElementNS("http://www.w3.org/2000/svg", "line");
-      guide.setAttribute("x1", guideX1);
-      guide.setAttribute("y1", guideY1);
-      guide.setAttribute("x2", guideX2);
-      guide.setAttribute("y2", guideY2);
-      guide.setAttribute("stroke", "#f3f7fb");
-      guide.setAttribute("stroke-width", "1.1");
-      guide.setAttribute("stroke-linecap", "round");
-      guide.setAttribute("stroke-opacity", count > 1 ? "0.74" : "0.48");
-
-      const exactHalo = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-      exactHalo.setAttribute("cx", ex);
-      exactHalo.setAttribute("cy", ey);
-      exactHalo.setAttribute("r", "8.4");
-      exactHalo.setAttribute("fill", "#05070b");
-      exactHalo.setAttribute("fill-opacity", "0.7");
-
-      const exactMarker = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-      exactMarker.setAttribute("cx", ex);
-      exactMarker.setAttribute("cy", ey);
-      exactMarker.setAttribute("r", "6.6");
-      exactMarker.setAttribute("fill", "rgba(13, 17, 24, 0.9)");
-      exactMarker.setAttribute("stroke", pStyle.color);
-      exactMarker.setAttribute("stroke-width", "1.4");
-
-      const markerGlyph = document.createElementNS("http://www.w3.org/2000/svg", "text");
-      markerGlyph.setAttribute("x", ex);
-      markerGlyph.setAttribute("y", ey + 2.6);
-      markerGlyph.setAttribute("text-anchor", "middle");
-      markerGlyph.setAttribute("font-size", item.planet === "Jupiter" ? "8.6" : "7.8");
-      markerGlyph.setAttribute("fill", "#f7fbff");
-      markerGlyph.setAttribute("font-weight", "800");
-      markerGlyph.textContent = markerSymbols[item.planet] || "\u2022";
-
       const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       dot.setAttribute("cx", px);
       dot.setAttribute("cy", py - 6);
@@ -509,11 +435,6 @@ function drawZodiacWheel(data) {
       label.textContent = planetSymbols[item.planet] || item.planet;
 
       link.appendChild(title);
-      link.appendChild(guideUnderlay);
-      link.appendChild(guide);
-      link.appendChild(exactHalo);
-      link.appendChild(exactMarker);
-      link.appendChild(markerGlyph);
       link.appendChild(dot);
       link.appendChild(label);
       svg.appendChild(link);
