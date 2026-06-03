@@ -70,6 +70,57 @@ function circledNum(n) {
   return String(n || "");
 }
 
+function normalizeDegree(degree) {
+  return ((degree % 360) + 360) % 360;
+}
+
+function positionFromLongitude(longitude) {
+  const signs = Object.keys(signSymbols);
+  const normalized = normalizeDegree(longitude);
+  const signIndex = Math.floor(normalized / 30);
+  return {
+    degree: normalized - signIndex * 30,
+    sign: signs[signIndex]
+  };
+}
+
+function julianDay(dateStr, timeStr = "00:00") {
+  const [year, month, day] = dateStr.split("-").map(Number);
+  const [hour = 0, minute = 0] = timeStr.split(":").map(Number);
+  const utcDate = Date.UTC(year, month - 1, day, hour, minute);
+  return utcDate / 86400000 + 2440587.5;
+}
+
+function meanRahuLongitude(dateStr, timeStr) {
+  const t = (julianDay(dateStr, timeStr) - 2451545.0) / 36525;
+  return normalizeDegree(125.04452 - 1934.136261 * t + 0.0020708 * t * t + (t * t * t) / 450000);
+}
+
+function addMissingLunarNodes(data) {
+  const date = (data.date || document.getElementById("date")?.value || "").slice(0, 10);
+  const time = data.time || document.getElementById("time")?.value || "00:00";
+  if (!date) return data;
+
+  const positions = { ...data.positions };
+  if (!positions.Rahu || !positions.Ketu) {
+    const rahuLongitude = meanRahuLongitude(date, time);
+    if (!positions.Rahu) {
+      positions.Rahu = {
+        ...positionFromLongitude(rahuLongitude),
+        source: "Mean lunar node"
+      };
+    }
+    if (!positions.Ketu) {
+      positions.Ketu = {
+        ...positionFromLongitude(rahuLongitude + 180),
+        source: "Opposite Rahu"
+      };
+    }
+  }
+
+  return { ...data, positions };
+}
+
 function setStatus(title, detail = "") {
   const results = document.getElementById("results");
   if (!results) return;
@@ -164,8 +215,9 @@ function displayPositions(data, title = "Planet Positions", detail = "") {
     return;
   }
 
+  const chartData = addMissingLunarNodes(data);
   setStatus(title, detail);
-  drawZodiacWheel(data);
+  drawZodiacWheel(chartData);
 
   const chart = document.getElementById("chart");
   chart.innerHTML = "";
@@ -186,17 +238,18 @@ function displayPositions(data, title = "Planet Positions", detail = "") {
   `;
 
   const tbody = table.querySelector("tbody");
-  for (const [planet, info] of Object.entries(data.positions)) {
+  for (const [planet, info] of Object.entries(chartData.positions)) {
     const p = planetStyles[planet] || { symbol: planet, color: "#ccc" };
     const degree = Number.isFinite(info.degree) ? `${info.degree.toFixed(1)}°` : "";
     const nakshatraName = info.nakshatra || "";
     const nakshatraNumber = nakshatraName ? circledNum(nakshatraIndex[nakshatraName]) : "";
     const nakshatraCode = nakshatraName ? (nakshatraAbbr[nakshatraName] || nakshatraName) : "";
     const pada = info.pada ? (padaSymbols[info.pada] || info.pada) : "";
+    const sourceTitle = info.source ? `${planet}: ${info.source}` : planet;
 
     const row = document.createElement("tr");
     row.innerHTML = `
-      <td><span class="planet-cell"><span class="planet-symbol" style="color:${p.color}">${p.symbol}</span>${planet}</span></td>
+      <td><span class="planet-cell" title="${sourceTitle}"><span class="planet-symbol" style="color:${p.color}">${p.symbol}</span>${planet}</span></td>
       <td>${degree}</td>
       <td class="sign-cell" title="${info.sign || ""}">${signSymbols[info.sign] || info.sign || ""}</td>
       <td>${nakshatraNumber}${nakshatraCode ? `<span class="nakshatra-code" title="${nakshatraName}">${nakshatraCode}</span>` : ""}</td>
