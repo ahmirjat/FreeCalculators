@@ -4,7 +4,7 @@ const cityTimezone = {
   "Toronto": "-4",
   "New York": "-4",
   "London": "1",
-  "Hyderabad": "5",
+  "Hyderabad Pakistan": "5",
   "Dubai": "4",
   "Tokyo": "9",
   "Sydney": "10"
@@ -61,7 +61,13 @@ const signSymbols = {
 };
 
 const knownCacheFiles = [
-  "planet-cache-Toronto-UTC-4-2025-08-6mo.json"
+  "planet-cache-Toronto-UTC-4-2025-08-6mo.json",
+  "planet-cache-New-York-UTC-4-2025-08-6mo.json",
+  "planet-cache-London-UTC1-2025-08-6mo.json",
+  "planet-cache-Hyderabad-Pakistan-UTC5-2025-08-6mo.json",
+  "planet-cache-Dubai-UTC4-2025-08-6mo.json",
+  "planet-cache-Tokyo-UTC9-2025-08-6mo.json",
+  "planet-cache-Sydney-UTC10-2025-08-6mo.json"
 ];
 
 function circledNum(n) {
@@ -138,8 +144,10 @@ async function preloadCachedFiles() {
       const res = await fetch(url);
       if (!res.ok) continue;
       const json = await res.json();
-      const parts = filename.replace(".json", "").split("-");
-      const city = parts.slice(2, -5).join("-") || parts[2];
+      const city = filename
+        .replace(/^planet-cache-/, "")
+        .replace(/-UTC-?\d+(?:_\d+)?-\d{4}-\d{2}-6mo\.json$/, "")
+        .replace(/-/g, " ");
       if (!cachedDataByCity[city]) cachedDataByCity[city] = [];
       cachedDataByCity[city].push(json);
     } catch (err) {
