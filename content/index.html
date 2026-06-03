@@ -51,7 +51,6 @@
     box-shadow: 0 6px 18px var(--shadow);
   }
 
-  /* Accent ring using per-tile CSS var --accent */
   .tile::after {
     content: "";
     position: absolute;
@@ -85,11 +84,9 @@
   .title-sm { font-weight: 700; font-size: 1.02rem; color: var(--fg); }
   .desc { color: var(--muted); margin-top: 4px; font-size: .95rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 
-  /* small filter row (optional, no JS needed for now) */
   .filters { display:flex; gap:8px; flex-wrap:wrap; margin-top:4px; }
   .chip { padding:6px 10px; border:1px solid var(--card-border); border-radius:999px; font-size:.9rem; opacity:.85 }
 
-  /* sign tiles: subtle neutral accent */
   .tile.sign { --accent: rgba(255,255,255,.08); }
 </style>
 </head>
@@ -113,20 +110,19 @@
 </div>
 
 <script>
-/* === Your palette === */
 const planetStyles = {
-  "Sun":     { symbol: "☉", color: "#FFD700" }, // gold
-  "Moon":    { symbol: "☽", color: "#ADD8E6" }, // light blue
-  "Mercury": { symbol: "☿", color: "#87CEEB" }, // sky blue
-  "Venus":   { symbol: "♀", color: "#FF69B4" }, // pink
-  "Mars":    { symbol: "♂", color: "#FF4500" }, // red-orange
-  "Jupiter": { symbol: "♃", color: "#FFA500" }, // orange
-  "Saturn":  { symbol: "♄", color: "#DAA520" }, // goldenrod
-  "Uranus":  { symbol: "⛢", color: "#40E0D0" }, // turquoise
-  "Neptune": { symbol: "♆", color: "#4169E1" }, // royal blue
-  "Pluto":   { symbol: "♇", color: "#8B008B" }, // dark magenta
-  "Rahu":    { symbol: "☊", color: "#999999" }, // gray
-  "Ketu":    { symbol: "☋", color: "#666666" }  // darker gray
+  "Sun":     { symbol: "☉", color: "#FFD700" },
+  "Moon":    { symbol: "☽", color: "#ADD8E6" },
+  "Mercury": { symbol: "☿", color: "#87CEEB" },
+  "Venus":   { symbol: "♀", color: "#FF69B4" },
+  "Mars":    { symbol: "♂", color: "#FF4500" },
+  "Jupiter": { symbol: "♃", color: "#FFA500" },
+  "Saturn":  { symbol: "♄", color: "#DAA520" },
+  "Uranus":  { symbol: "⛢", color: "#40E0D0" },
+  "Neptune": { symbol: "♆", color: "#4169E1" },
+  "Pluto":   { symbol: "♇", color: "#8B008B" },
+  "Rahu":    { symbol: "☊", color: "#B5BDC8" },
+  "Ketu":    { symbol: "☋", color: "#8B95A3" }
 };
 
 const META = {
@@ -140,9 +136,9 @@ const META = {
     {slug:"saturn",title:"Saturn"},
     {slug:"uranus",title:"Uranus"},
     {slug:"neptune",title:"Neptune"},
-    {slug:"pluto",title:"Pluto"}
-    // If you want Rahu/Ketu pages later, just add:
-    // ,{slug:"rahu",title:"Rahu"}, {slug:"ketu",title:"Ketu"}
+    {slug:"pluto",title:"Pluto"},
+    {slug:"rahu",title:"Rahu"},
+    {slug:"ketu",title:"Ketu"}
   ],
   signs: [
     {slug:"aries",title:"Aries",emoji:"♈"},
@@ -162,7 +158,6 @@ const META = {
 
 const esc = s => String(s ?? "");
 
-/* Build a planet tile with color accent from planetStyles */
 function planetTile(p) {
   const st = planetStyles[p.title] || { symbol: "🪐", color: "#6aa3ff" };
   const accent = st.color;
@@ -182,7 +177,6 @@ function planetTile(p) {
   </a>`;
 }
 
-/* Build a sign tile (neutral accent; emoji from META) */
 function signTile(s) {
   return `
   <a class="tile sign" href="./signs/${esc(s.slug)}.html">
