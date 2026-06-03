@@ -9,7 +9,9 @@
     {"slug":"saturn","title":"Saturn","emoji":"♄"},
     {"slug":"uranus","title":"Uranus","emoji":"⛢"},
     {"slug":"neptune","title":"Neptune","emoji":"♆"},
-    {"slug":"pluto","title":"Pluto","emoji":"♇"}
+    {"slug":"pluto","title":"Pluto","emoji":"♇"},
+    {"slug":"rahu","title":"Rahu","emoji":"☊"},
+    {"slug":"ketu","title":"Ketu","emoji":"☋"}
   ],
   "signs": [
     {"slug":"aries","title":"Aries","emoji":"♈"},
