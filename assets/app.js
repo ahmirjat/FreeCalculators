@@ -1,6 +1,5 @@
 const cachedDataByCity = {};
 
-// === CONFIGURATION ===
 const cityTimezone = {
   "Toronto": "-4",
   "New York": "-4",
@@ -11,35 +10,24 @@ const cityTimezone = {
   "Sydney": "10"
 };
 
-// 1–27 index for nakshatras
 const nakshatraIndex = {
-  "Ashwini":1, "Bharani":2, "Krittika":3, "Rohini":4, "Mrigashira":5,
-  "Ardra":6, "Punarvasu":7, "Pushya":8, "Ashlesha":9, "Magha":10,
-  "Purva Phalguni":11, "Uttara Phalguni":12, "Hasta":13, "Chitra":14, "Swati":15,
-  "Vishakha":16, "Anuradha":17, "Jyeshta":18, "Mula":19, "Purva Ashadha":20,
-  "Uttara Ashadha":21, "Shravana":22, "Dhanishta":23, "Shatabhisha":24,
-  "Purva Bhadrapada":25, "Uttara Bhadrapada":26, "Revati":27
+  "Ashwini": 1, "Bharani": 2, "Krittika": 3, "Rohini": 4, "Mrigashira": 5,
+  "Ardra": 6, "Punarvasu": 7, "Pushya": 8, "Ashlesha": 9, "Magha": 10,
+  "Purva Phalguni": 11, "Uttara Phalguni": 12, "Hasta": 13, "Chitra": 14, "Swati": 15,
+  "Vishakha": 16, "Anuradha": 17, "Jyeshta": 18, "Mula": 19, "Purva Ashadha": 20,
+  "Uttara Ashadha": 21, "Shravana": 22, "Dhanishta": 23, "Shatabhisha": 24,
+  "Purva Bhadrapada": 25, "Uttara Bhadrapada": 26, "Revati": 27
 };
 
-// ①..⑳, then ㉑..㉗
-function circledNum(n){
-  if (n>=1 && n<=20) return String.fromCharCode(0x2460 + (n-1));
-  if (n>=21 && n<=27) return String.fromCharCode(0x3251 + (n-21));
-  return String(n);
-}
-
-// Optional tiny abbreviations for readability
 const nakshatraAbbr = {
-  "Ashwini":"Aśv","Bharani":"Bhr","Krittika":"Kri","Rohini":"Roh","Mrigashira":"Mṛg",
-  "Ardra":"Ard","Punarvasu":"Pun","Pushya":"Puṣ","Ashlesha":"Aśl","Magha":"Mag",
-  "Purva Phalguni":"PPha","Uttara Phalguni":"UPha","Hasta":"Has","Chitra":"Chi","Swati":"Swa",
-  "Vishakha":"Viś","Anuradha":"Anu","Jyeshta":"Jye","Mula":"Mul","Purva Ashadha":"PAś",
-  "Uttara Ashadha":"UAś","Shravana":"Shr","Dhanishta":"Dha","Shatabhisha":"Sha",
-  "Purva Bhadrapada":"PBr","Uttara Bhadrapada":"UBr","Revati":"Rev"
+  "Ashwini": "Asv", "Bharani": "Bhr", "Krittika": "Kri", "Rohini": "Roh", "Mrigashira": "Mrg",
+  "Ardra": "Ard", "Punarvasu": "Pun", "Pushya": "Pus", "Ashlesha": "Asl", "Magha": "Mag",
+  "Purva Phalguni": "PPha", "Uttara Phalguni": "UPha", "Hasta": "Has", "Chitra": "Chi", "Swati": "Swa",
+  "Vishakha": "Vis", "Anuradha": "Anu", "Jyeshta": "Jye", "Mula": "Mul", "Purva Ashadha": "PAs",
+  "Uttara Ashadha": "UAs", "Shravana": "Shr", "Dhanishta": "Dha", "Shatabhisha": "Sha",
+  "Purva Bhadrapada": "PBr", "Uttara Bhadrapada": "UBr", "Revati": "Rev"
 };
 
-
-// Padas as black circled numbers
 const padaSymbols = {
   1: "\u2460",
   2: "\u2461",
@@ -48,37 +36,50 @@ const padaSymbols = {
 };
 
 const planetStyles = {
-  "Sun":     { symbol: "☉", color: "#FFD700" }, // gold
-  "Moon":    { symbol: "☽", color: "#ADD8E6" }, // light blue
-  "Mercury": { symbol: "☿", color: "#87CEEB" }, // sky blue
-  "Venus":   { symbol: "♀", color: "#FF69B4" }, // pink
-  "Mars":    { symbol: "♂", color: "#FF4500" }, // red-orange
-  "Jupiter": { symbol: "♃", color: "#FFA500" }, // orange
-  "Saturn":  { symbol: "♄", color: "#DAA520" }, // goldenrod
-  "Uranus":  { symbol: "♅", color: "#40E0D0" }, // turquoise
-  "Neptune": { symbol: "♆", color: "#4169E1" }, // royal blue
-  "Pluto":   { symbol: "♇", color: "#8B008B" }, // dark magenta
-  "Rahu":    { symbol: "☊", color: "#999999" }, // gray
-  "Ketu":    { symbol: "☋", color: "#666666" }  // darker gray
+  "Sun": { symbol: "☉", color: "#FFD700" },
+  "Moon": { symbol: "☽", color: "#ADD8E6" },
+  "Mercury": { symbol: "☿", color: "#87CEEB" },
+  "Venus": { symbol: "♀", color: "#FF69B4" },
+  "Mars": { symbol: "♂", color: "#FF4500" },
+  "Jupiter": { symbol: "♃", color: "#FFA500" },
+  "Saturn": { symbol: "♄", color: "#DAA520" },
+  "Uranus": { symbol: "♅", color: "#40E0D0" },
+  "Neptune": { symbol: "♆", color: "#4169E1" },
+  "Pluto": { symbol: "♇", color: "#B266FF" },
+  "Rahu": { symbol: "☊", color: "#B5BDC8" },
+  "Ketu": { symbol: "☋", color: "#8B95A3" }
 };
 
+const planetSymbols = Object.fromEntries(
+  Object.entries(planetStyles).map(([planet, style]) => [planet, style.symbol])
+);
 
-const planetSymbols = {
-  "Sun": "☉", "Moon": "☽", "Mercury": "☿", "Venus": "♀", "Mars": "♂",
-  "Jupiter": "♃", "Saturn": "♄", "Rahu": "☊", "Ketu": "☋",
-  "Uranus": "♅", "Neptune": "♆", "Pluto": "♇"
+const signSymbols = {
+  "Aries": "♈", "Taurus": "♉", "Gemini": "♊", "Cancer": "♋",
+  "Leo": "♌", "Virgo": "♍", "Libra": "♎", "Scorpio": "♏",
+  "Sagittarius": "♐", "Capricorn": "♑", "Aquarius": "♒", "Pisces": "♓"
 };
-  const signSymbols = {
-    "Aries": "♈", "Taurus": "♉", "Gemini": "♊", "Cancer": "♋",
-    "Leo": "♌", "Virgo": "♍", "Libra": "♎", "Scorpio": "♏",
-    "Sagittarius": "♐", "Capricorn": "♑", "Aquarius": "♒", "Pisces": "♓"
-  };
+
 const knownCacheFiles = [
   "planet-cache-Toronto-UTC-4-2025-08-6mo.json"
 ];
 
+function circledNum(n) {
+  if (n >= 1 && n <= 20) return String.fromCharCode(0x2460 + (n - 1));
+  if (n >= 21 && n <= 27) return String.fromCharCode(0x3251 + (n - 21));
+  return String(n || "");
+}
 
-// === PRELOAD CACHE FILES ===
+function setStatus(title, detail = "") {
+  const results = document.getElementById("results");
+  if (!results) return;
+  results.innerHTML = `<strong>${title}</strong>${detail ? `<span>${detail}</span>` : ""}`;
+}
+
+function selectedCityName() {
+  return document.getElementById("city").value.split(",")[0];
+}
+
 async function preloadCachedFiles() {
   for (const filename of knownCacheFiles) {
     const url = `https://ahmirjat.github.io/FreeCalculators/data/${filename}`;
@@ -86,202 +87,178 @@ async function preloadCachedFiles() {
       const res = await fetch(url);
       if (!res.ok) continue;
       const json = await res.json();
-
       const parts = filename.replace(".json", "").split("-");
-      const city = parts.slice(2, -4).join("-");
-      const rawTz = parts[parts.length - 4];
-      const key = `${city}-${rawTz}`;
-
-      if (!cachedDataByCity[key]) cachedDataByCity[key] = [];
-      cachedDataByCity[key].push(json);
+      const city = parts.slice(2, -5).join("-") || parts[2];
+      if (!cachedDataByCity[city]) cachedDataByCity[city] = [];
+      cachedDataByCity[city].push(json);
     } catch (err) {
-      console.warn(`❌ Failed to preload ${filename}`);
+      console.warn(`Failed to preload ${filename}`, err);
     }
   }
 }
 
-// === INITIAL SETUP ===
 window.addEventListener("DOMContentLoaded", async () => {
   const now = new Date();
   document.getElementById("date").value = now.toISOString().split("T")[0];
   document.getElementById("time").value = now.toTimeString().slice(0, 5);
-  document.getElementById("tz_offset").value = -now.getTimezoneOffset() / 60;
 
   const defaultCityValue = "Toronto,43.6532,-79.3832";
   document.getElementById("city").value = defaultCityValue;
-  const [ , defLat, defLon ] = defaultCityValue.split(",");
-  document.getElementById("latitude").value = defLat;
-  document.getElementById("longitude").value = defLon;
+  overrideCoordinates();
 
   await preloadCachedFiles();
   calculatePositions();
 });
 
 function overrideCoordinates() {
-  const cityDropdown = document.getElementById("city");
-  const selected = cityDropdown.value;
-  if (selected) {
-    const [ , lat, lon ] = selected.split(",");
-    document.getElementById("latitude").value = lat;
-    document.getElementById("longitude").value = lon;
-  }
+  const selected = document.getElementById("city").value;
+  if (!selected) return;
+
+  const [city, lat, lon] = selected.split(",");
+  document.getElementById("latitude").value = lat;
+  document.getElementById("longitude").value = lon;
+  document.getElementById("tz_offset").value = cityTimezone[city] || "0";
 }
 
-
-// === CALCULATE POSITIONS ===
 async function calculatePositions() {
+  overrideCoordinates();
+
   const date = document.getElementById("date").value;
   const time = document.getElementById("time").value;
-  const tz   = document.getElementById("tz_offset").value;
-  const lat  = document.getElementById("latitude").value;
-  const lon  = document.getElementById("longitude").value;
-  const cityLabel = document.getElementById("city").value.split(",")[0];
+  const tz = document.getElementById("tz_offset").value;
+  const lat = document.getElementById("latitude").value;
+  const lon = document.getElementById("longitude").value;
+  const cityLabel = selectedCityName();
 
-  const apiUrl = `http://localhost:8000/api/planet-positions?date=${date}&time=${time}&tz_offset=${tz}&lat=${lat}&lon=${lon}`;
+  if (!date || !time) {
+    setStatus("Choose a date and time.", "The calculator needs both fields before it can draw a chart.");
+    return;
+  }
+
+  setStatus("Calculating chart...", `${cityLabel} at ${date} ${time}`);
+
+  const params = new URLSearchParams({ date, time, tz_offset: tz, lat, lon });
+  const apiUrl = `http://localhost:8000/api/planet-positions?${params}`;
 
   try {
     const response = await fetch(apiUrl);
     if (!response.ok) throw new Error(`API error ${response.status}`);
     const data = await response.json();
-    displayPositions(data, `✅ Live data for ${cityLabel} on ${data.date} ${data.time}`);
+    displayPositions(data, "Live data", `${cityLabel} on ${data.date || date} ${data.time || time}`);
     localStorage.setItem(`planetData_${date}_${lat}_${lon}`, JSON.stringify(data));
   } catch (error) {
-    console.warn("⚠️ API failed, trying cache...");
+    console.warn("API failed, trying cache...", error);
     const cached = localStorage.getItem(`planetData_${date}_${lat}_${lon}`);
     if (cached) {
       const data = JSON.parse(cached);
-      displayPositions(data, `⚠️ Local cache used for ${cityLabel} on ${data.date}`);
+      displayPositions(data, "Local cache used", `${cityLabel} on ${data.date || date}`);
     } else {
       await fetchCachedData(cityLabel, date);
     }
   }
 }
 
-function displayPositions(data, heading = "Planet Positions") {
-  document.getElementById("results").textContent = `${heading}\n\n`;
+function displayPositions(data, title = "Planet Positions", detail = "") {
+  if (!data || !data.positions) {
+    setStatus("No chart data found.", "Try another date or city.");
+    return;
+  }
 
-  drawZodiacWheel(data); // ✅ make sure this is active
+  setStatus(title, detail);
+  drawZodiacWheel(data);
 
   const chart = document.getElementById("chart");
   chart.innerHTML = "";
 
-  const container = document.createElement("div");
-  container.style.display = "grid";
-container.style.gridTemplateColumns = "auto auto auto auto auto";
-  container.style.gap = "6px";
-  container.style.background = "#0b0c10";
-  container.style.padding = "0.5em";
+  const table = document.createElement("table");
+  table.className = "positions-table";
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th>Planet</th>
+        <th>Degree</th>
+        <th>Sign</th>
+        <th>Nakshatra</th>
+        <th>Pada</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  `;
 
-  const signs = [
-    "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"
-  ];
-
-
-    let i = 0;
+  const tbody = table.querySelector("tbody");
   for (const [planet, info] of Object.entries(data.positions)) {
-    const row = document.createElement("div");
-    row.style.display = "contents";
-
-    const cell1 = document.createElement("div"); // Planet
-    const cell2 = document.createElement("div"); // Degree
-    const cell3 = document.createElement("div"); // Sign
-    const cell4 = document.createElement("div"); // Nakshatra
-    const cell5 = document.createElement("div"); // Pada
-
     const p = planetStyles[planet] || { symbol: planet, color: "#ccc" };
-    cell1.innerHTML = `<span style="color:${p.color}">${p.symbol}</span>`;
-    cell2.textContent = `${info.degree.toFixed(1)}°`;
-    cell3.textContent = `${signSymbols[info.sign] || info.sign}`;
-if (info.nakshatra) {
-  const idx = nakshatraIndex[info.nakshatra];
-  const icon = circledNum(idx);
-  const abbr = nakshatraAbbr[info.nakshatra] || info.nakshatra;
-  cell4.innerHTML = `<span title="${info.nakshatra}" style="margin-right:6px">${icon}</span><span class="badge">${abbr}</span>`;
-} else {
-  cell4.textContent = "";
-}
-    cell5.textContent = info.pada || "";
+    const degree = Number.isFinite(info.degree) ? `${info.degree.toFixed(1)}°` : "";
+    const nakshatraName = info.nakshatra || "";
+    const nakshatraNumber = nakshatraName ? circledNum(nakshatraIndex[nakshatraName]) : "";
+    const nakshatraCode = nakshatraName ? (nakshatraAbbr[nakshatraName] || nakshatraName) : "";
+    const pada = info.pada ? (padaSymbols[info.pada] || info.pada) : "";
 
-            cell1.style.fontSize = "34px";
-            cell2.style.fontSize = "24px";
-            cell3.style.fontSize = "24px";
-      cell3.style.textAlign = "centre";
-cell4.style.textAlign = "left";
-
-      cell5.textContent = info.pada ? (padaSymbols[info.pada] || info.pada) : "";
-
-    // Apply consistent styling
-    [cell1, cell2, cell3, cell4, cell5].forEach(cell => {
-      cell.style.padding = "6px";
-      cell.style.background = i % 2 === 0 ? "#1f2833" : "#182024";
-      cell.style.fontFamily = "monospace";
-
-    });
-
-    container.append(cell1, cell2, cell3, cell4, cell5);
-    i++;
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td><span class="planet-cell"><span class="planet-symbol" style="color:${p.color}">${p.symbol}</span>${planet}</span></td>
+      <td>${degree}</td>
+      <td class="sign-cell" title="${info.sign || ""}">${signSymbols[info.sign] || info.sign || ""}</td>
+      <td>${nakshatraNumber}${nakshatraCode ? `<span class="nakshatra-code" title="${nakshatraName}">${nakshatraCode}</span>` : ""}</td>
+      <td>${pada}</td>
+    `;
+    tbody.appendChild(row);
   }
 
-
-  chart.appendChild(container);
+  chart.appendChild(table);
 }
 
-
-// === FALLBACK FETCH ===
 async function fetchCachedData(city, dateStr) {
-  const tz = cityTimezone[city] || "0";
-  const safeCity = city.replace(/ /g, "-").replace(/[()]/g, "");
-  const cityPrefix = `${safeCity}-UTC`;
-
-  const key = Object.keys(cachedDataByCity).find(k => k.startsWith(cityPrefix));
-  if (!key || !cachedDataByCity[key]) {
-    document.getElementById("results").textContent = "⚠️ No cached data available for selected city.";
+  const allFiles = cachedDataByCity[city];
+  if (!allFiles || !allFiles.length) {
+    setStatus("No cached data available.", `The public page cannot reach the local API for ${city}, and no cache was found for this city.`);
+    document.getElementById("chart").innerHTML = '<p class="empty-state">Start the API locally or choose a cached city/date.</p>';
     return;
   }
 
-  const allFiles = cachedDataByCity[key];
   for (const file of allFiles) {
-    const dates = Object.keys(file.positions).sort();
+    const dates = Object.keys(file.positions || {}).sort();
     const fallbackDate = dates.find(d => d >= dateStr) || dates.at(-1);
     if (fallbackDate) {
-      const position = file.positions[fallbackDate];
       const data = {
         date: fallbackDate,
-        positions: position
+        positions: file.positions[fallbackDate]
       };
-      displayPositions(data, `⚠️ Cached data for ${city} on ${fallbackDate}`);
+      displayPositions(data, "Cached data", `${city} on ${fallbackDate}`);
       return;
     }
   }
 
-  document.getElementById("results").textContent = "⚠️ API unavailable and no cached data found.";
+  setStatus("API unavailable and no cache matched.", "Try a different date or run the local API server.");
 }
 
 function drawZodiacWheel(data) {
-  console.log("Drawing wheel with data:", data);
-
   const svg = document.getElementById("zodiac-wheel");
-  if (!svg) {
-    console.warn("Zodiac SVG element not found.");
-    return;
-  }
+  if (!svg || !data.positions) return;
 
-  svg.innerHTML = ""; // clear previous
+  svg.innerHTML = "";
 
-  const cx = 200, cy = 200, r = 150;
-  const signs = Object.keys(signSymbols);  // ✅ from your standard
-
+  const cx = 200;
+  const cy = 200;
+  const r = 150;
+  const signs = Object.keys(signSymbols);
   const signColors = [
-    "#FF6666", "#FFCC66", "#99CC66", "#66CCCC", "#6699CC", "#9966CC",
-    "#CC66CC", "#CC6699", "#CC6666", "#CC9966", "#CCCC66", "#66CC99"
+    "#ff6b5f", "#f2b84b", "#99c45f", "#4fc3b4", "#5f95d6", "#8d75d6",
+    "#c767c9", "#d66395", "#c86560", "#c9905d", "#c8c75f", "#56bf89"
   ];
 
-  // Draw pie segments
+  const outer = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  outer.setAttribute("cx", cx);
+  outer.setAttribute("cy", cy);
+  outer.setAttribute("r", r + 8);
+  outer.setAttribute("fill", "#0d1118");
+  outer.setAttribute("stroke", "#2c3544");
+  outer.setAttribute("stroke-width", "2");
+  svg.appendChild(outer);
+
   for (let i = 0; i < 12; i++) {
     const start = (i * 30 - 90) * Math.PI / 180;
     const end = ((i + 1) * 30 - 90) * Math.PI / 180;
-
     const x1 = cx + r * Math.cos(start);
     const y1 = cy + r * Math.sin(start);
     const x2 = cx + r * Math.cos(end);
@@ -290,76 +267,64 @@ function drawZodiacWheel(data) {
     const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
     path.setAttribute("d", `M ${cx} ${cy} L ${x1} ${y1} A ${r} ${r} 0 0 1 ${x2} ${y2} Z`);
     path.setAttribute("fill", signColors[i]);
-    path.setAttribute("stroke", "#222");
+    path.setAttribute("stroke", "#11151c");
+    path.setAttribute("stroke-width", "1.5");
     svg.appendChild(path);
 
-    // Sign symbol label
     const mid = (i * 30 + 15 - 90) * Math.PI / 180;
     const lx = cx + (r + 30) * Math.cos(mid);
     const ly = cy + (r + 30) * Math.sin(mid);
 
-const link = document.createElementNS("http://www.w3.org/2000/svg", "a");
-link.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", `content/signs/${signs[i].toLowerCase()}.html`);
-link.setAttribute("target", "_self"); // or "_blank" if you want new tab
+    const link = document.createElementNS("http://www.w3.org/2000/svg", "a");
+    link.setAttribute("href", `content/signs/${signs[i].toLowerCase()}.html`);
 
-const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
-label.setAttribute("x", lx);
-label.setAttribute("y", ly);
-label.setAttribute("text-anchor", "middle");
-label.setAttribute("alignment-baseline", "middle");
-label.setAttribute("font-size", "36");
-label.setAttribute("fill", "#fff");
-label.textContent = signSymbols[signs[i]];
+    const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    label.setAttribute("x", lx);
+    label.setAttribute("y", ly);
+    label.setAttribute("text-anchor", "middle");
+    label.setAttribute("dominant-baseline", "middle");
+    label.setAttribute("font-size", "30");
+    label.setAttribute("fill", "#eef3f7");
+    label.textContent = signSymbols[signs[i]];
 
-link.appendChild(label);
-svg.appendChild(link);
-
+    link.appendChild(label);
+    svg.appendChild(link);
   }
 
-    let planetDistance=40;
-  // Draw planet positions
+  let planetDistance = 40;
   for (const planet in data.positions) {
     const { degree, sign } = data.positions[planet];
     const signIndex = signs.indexOf(sign);
-    if (signIndex === -1) {
-      console.warn("Unrecognized sign:", sign);
-      continue;
-    }
+    if (signIndex === -1 || !Number.isFinite(degree)) continue;
 
     const absDeg = signIndex * 30 + degree;
     const angle = (absDeg - 90) * Math.PI / 180;
-
     const px = cx + (r - planetDistance) * Math.cos(angle);
     const py = cy + (r - planetDistance) * Math.sin(angle);
+    planetDistance = Math.min(112, planetDistance + 9);
 
-      planetDistance=planetDistance+10;
-      
-          const p = planetStyles[planet] || { symbol: planet, color: "#ccc" };
-      
-  const link = document.createElementNS("http://www.w3.org/2000/svg", "a");
-link.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", `content/planets/${planet.toLowerCase()}.html`);
-link.setAttribute("target", "_self");
+    const pStyle = planetStyles[planet] || { symbol: planet, color: "#ccc" };
+    const link = document.createElementNS("http://www.w3.org/2000/svg", "a");
+    link.setAttribute("href", `content/planets/${planet.toLowerCase()}.html`);
 
-const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-dot.setAttribute("cx", px);
-dot.setAttribute("cy", py-9);
-dot.setAttribute("r", 18);
-dot.setAttribute("fill", "rgba(15, 20, 25, 0.6)");
+    const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    dot.setAttribute("cx", px);
+    dot.setAttribute("cy", py - 8);
+    dot.setAttribute("r", 17);
+    dot.setAttribute("fill", "rgba(13, 17, 24, 0.72)");
+    dot.setAttribute("stroke", pStyle.color);
+    dot.setAttribute("stroke-width", "1");
 
-const pStyle = planetStyles[planet] || { symbol: planet, color: "#ccc" };
-const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
-label.setAttribute("x", px);
-label.setAttribute("y", py);
-label.setAttribute("text-anchor", "middle");
-label.setAttribute("font-size", "27");
-label.setAttribute("fill", pStyle.color);
-label.textContent = planetSymbols[planet] || planet;
+    const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    label.setAttribute("x", px);
+    label.setAttribute("y", py);
+    label.setAttribute("text-anchor", "middle");
+    label.setAttribute("font-size", "25");
+    label.setAttribute("fill", pStyle.color);
+    label.textContent = planetSymbols[planet] || planet;
 
-link.appendChild(dot);
-link.appendChild(label);
-svg.appendChild(link);
-
+    link.appendChild(dot);
+    link.appendChild(label);
+    svg.appendChild(link);
   }
-    
 }
-
